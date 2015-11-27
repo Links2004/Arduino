@@ -62,6 +62,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7cf404d8cb00212189607871e1d412b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d7d1cff85497948ee17936de202a04"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a51d7d1cff85497948ee17936de202a04">update</a> (String host, uint16_t port, String url=&quot;/&quot;, String current_version=&quot;&quot;)</td></tr>
 <tr class="separator:a51d7d1cff85497948ee17936de202a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf7a1f3f864e9a0041b769bc59e4092"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a1cf7a1f3f864e9a0041b769bc59e4092">update</a> (<a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a> &amp;client, const char *host, const char *url=&quot;/&quot;, const char *current_version=&quot;&quot;)</td></tr>
+<tr class="separator:a1cf7a1f3f864e9a0041b769bc59e4092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="add367291c5e57bb33f02763832b0f259"></a>
@@ -132,9 +134,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>&lt; OK (Start Update)</p>
-<p>&lt; Not Modified (No updates)</p>
-<p>&lt; Forbidden </p>
 
 </div>
 </div>
@@ -173,6 +172,47 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1cf7a1f3f864e9a0041b769bc59e4092"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; OK (Start Update)</p>
+<p>&lt; Not Modified (No updates)</p>
+<p>&lt; Forbidden </p>
 
 </div>
 </div>

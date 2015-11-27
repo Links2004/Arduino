@@ -65,8 +65,14 @@ Inheritance diagram for RequestHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:acbe0ef880c8c6440c6a56bb4d9fe0014"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#acbe0ef880c8c6440c6a56bb4d9fe0014">canHandle</a> (HTTPMethod method, String uri)</td></tr>
+<tr class="separator:acbe0ef880c8c6440c6a56bb4d9fe0014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cd0313a0d3901921f9b40d174ab346"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#ac5cd0313a0d3901921f9b40d174ab346">canUpload</a> (String uri)</td></tr>
+<tr class="separator:ac5cd0313a0d3901921f9b40d174ab346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab058292a2f7d4ef8562e0b6f8d18e209"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#ab058292a2f7d4ef8562e0b6f8d18e209">handle</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;server, HTTPMethod requestMethod, String requestUri)</td></tr>
 <tr class="separator:ab058292a2f7d4ef8562e0b6f8d18e209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250c1df11333484ec1d8cd132d7277a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#a250c1df11333484ec1d8cd132d7277a0">upload</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;server, String requestUri, <a class="el" href="../../d6/d7b/struct_h_t_t_p_upload.html">HTTPUpload</a> &amp;upload)</td></tr>
+<tr class="separator:a250c1df11333484ec1d8cd132d7277a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac852f240320a76edadf7a6e622a086fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d57/class_request_handler.html">RequestHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#ac852f240320a76edadf7a6e622a086fc">next</a> ()</td></tr>
 <tr class="separator:ac852f240320a76edadf7a6e622a086fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8031dabdd43b8ae964846bc946634ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#a8031dabdd43b8ae964846bc946634ec2">next</a> (<a class="el" href="../../d7/d57/class_request_handler.html">RequestHandler</a> *r)</td></tr>
@@ -78,6 +84,68 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8f93a3ca47acea0123eeaddb2d4cbae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="acbe0ef880c8c6440c6a56bb4d9fe0014"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RequestHandler::canHandle </td>
+          <td>(</td>
+          <td class="paramtype">HTTPMethod&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>uri</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../da/ded/class_static_request_handler.html#a3c49facd6819cd3e63035b9d2d264723">StaticRequestHandler</a>, and <a class="el" href="../../d5/ded/class_function_request_handler.html#af84b37c7c8b250e15b7036ad65c15e36">FunctionRequestHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5cd0313a0d3901921f9b40d174ab346"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RequestHandler::canUpload </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d5/ded/class_function_request_handler.html#a544a736176dc6ce05a7bf2922dd093fe">FunctionRequestHandler</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab058292a2f7d4ef8562e0b6f8d18e209"></a>
 <div class="memitem">
 <div class="memproto">
@@ -148,6 +216,48 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a250c1df11333484ec1d8cd132d7277a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RequestHandler::upload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>requestUri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d7b/struct_h_t_t_p_upload.html">HTTPUpload</a> &amp;&#160;</td>
+          <td class="paramname"><em>upload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d5/ded/class_function_request_handler.html#a326523a97007304b61a7c079d0f2d3b4">FunctionRequestHandler</a>.</p>
 
 </div>
 </div>

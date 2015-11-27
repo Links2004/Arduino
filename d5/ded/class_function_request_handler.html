@@ -64,10 +64,16 @@ Inheritance diagram for FunctionRequestHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adddf3d664b2423d123d5c4b04d2717d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#adddf3d664b2423d123d5c4b04d2717d7">FunctionRequestHandler</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a> fn, const char *uri, HTTPMethod method)</td></tr>
-<tr class="separator:adddf3d664b2423d123d5c4b04d2717d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22314c0082a37921011fee62e39403e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#a22314c0082a37921011fee62e39403e5">FunctionRequestHandler</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a> fn, <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a> ufn, const char *uri, HTTPMethod method)</td></tr>
+<tr class="separator:a22314c0082a37921011fee62e39403e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84b37c7c8b250e15b7036ad65c15e36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#af84b37c7c8b250e15b7036ad65c15e36">canHandle</a> (HTTPMethod requestMethod, String requestUri) override</td></tr>
+<tr class="separator:af84b37c7c8b250e15b7036ad65c15e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544a736176dc6ce05a7bf2922dd093fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#a544a736176dc6ce05a7bf2922dd093fe">canUpload</a> (String requestUri) override</td></tr>
+<tr class="separator:a544a736176dc6ce05a7bf2922dd093fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9ed176a05ad5e63a0e19b692138635"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#a0d9ed176a05ad5e63a0e19b692138635">handle</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;server, HTTPMethod requestMethod, String requestUri) override</td></tr>
 <tr class="separator:a0d9ed176a05ad5e63a0e19b692138635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326523a97007304b61a7c079d0f2d3b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#a326523a97007304b61a7c079d0f2d3b4">upload</a> (<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;server, String requestUri, <a class="el" href="../../d6/d7b/struct_h_t_t_p_upload.html">HTTPUpload</a> &amp;upload) override</td></tr>
+<tr class="separator:a326523a97007304b61a7c079d0f2d3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_request_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_request_handler')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/d57/class_request_handler.html">RequestHandler</a></td></tr>
 <tr class="memitem:ac852f240320a76edadf7a6e622a086fc inherit pub_methods_class_request_handler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d57/class_request_handler.html">RequestHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/class_request_handler.html#ac852f240320a76edadf7a6e622a086fc">next</a> ()</td></tr>
 <tr class="separator:ac852f240320a76edadf7a6e622a086fc inherit pub_methods_class_request_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -76,15 +82,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:aba7b97ac88bda2fb1cd83e643e2902a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#aba7b97ac88bda2fb1cd83e643e2902a0">_fn</a></td></tr>
+<tr class="separator:aba7b97ac88bda2fb1cd83e643e2902a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325d0701973be50df0f72cab1b9e32e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#a325d0701973be50df0f72cab1b9e32e7">_ufn</a></td></tr>
+<tr class="separator:a325d0701973be50df0f72cab1b9e32e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b82723adc19b71b63e2e672bbf4aa9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#ab9b82723adc19b71b63e2e672bbf4aa9">_uri</a></td></tr>
 <tr class="separator:ab9b82723adc19b71b63e2e672bbf4aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afced17df79d105c86f094025bcca5d09"><td class="memItemLeft" align="right" valign="top">HTTPMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#afced17df79d105c86f094025bcca5d09">_method</a></td></tr>
 <tr class="separator:afced17df79d105c86f094025bcca5d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7b97ac88bda2fb1cd83e643e2902a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ded/class_function_request_handler.html#aba7b97ac88bda2fb1cd83e643e2902a0">_fn</a></td></tr>
-<tr class="separator:aba7b97ac88bda2fb1cd83e643e2902a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adddf3d664b2423d123d5c4b04d2717d7"></a>
+<a class="anchor" id="a22314c0082a37921011fee62e39403e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -93,6 +101,12 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a>&#160;</td>
           <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a>&#160;</td>
+          <td class="paramname"><em>ufn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -117,6 +131,68 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af84b37c7c8b250e15b7036ad65c15e36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FunctionRequestHandler::canHandle </td>
+          <td>(</td>
+          <td class="paramtype">HTTPMethod&#160;</td>
+          <td class="paramname"><em>requestMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>requestUri</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d7/d57/class_request_handler.html#acbe0ef880c8c6440c6a56bb4d9fe0014">RequestHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a544a736176dc6ce05a7bf2922dd093fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FunctionRequestHandler::canUpload </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>requestUri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d7/d57/class_request_handler.html#ac5cd0313a0d3901921f9b40d174ab346">RequestHandler</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0d9ed176a05ad5e63a0e19b692138635"></a>
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +235,48 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a326523a97007304b61a7c079d0f2d3b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionRequestHandler::upload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a> &amp;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>requestUri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d7b/struct_h_t_t_p_upload.html">HTTPUpload</a> &amp;&#160;</td>
+          <td class="paramname"><em>upload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d7/d57/class_request_handler.html#a250c1df11333484ec1d8cd132d7277a0">RequestHandler</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="aba7b97ac88bda2fb1cd83e643e2902a0"></a>
 <div class="memitem">
@@ -189,6 +307,26 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">HTTPMethod FunctionRequestHandler::_method</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a325d0701973be50df0f72cab1b9e32e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">ESP8266WebServer::THandlerFunction</a> FunctionRequestHandler::_ufn</td>
         </tr>
       </table>
   </td>

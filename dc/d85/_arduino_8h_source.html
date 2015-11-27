@@ -199,7 +199,7 @@
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">// level (0-15), interrupts of the given level and above will be active</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">// level 15 will disable ALL interrupts,</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">// level 0 will enable ALL interrupts,</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#define xt_rsil(level) (__extension__({uint32_t state; __asm__ __volatile__(&quot;rsil %0,&quot; __STRINGIFY(level) : &quot;=a&quot; (state)); state;}))</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#define xt_wsr_ps(state)  __asm__ __volatile__(&quot;wsr %0,ps; isync&quot; :: &quot;a&quot; (state) : &quot;memory&quot;)</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
@@ -317,12 +317,14 @@
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">void</span> randomSeed(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keywordtype">long</span> map(<span class="keywordtype">long</span>, <span class="keywordtype">long</span>, <span class="keywordtype">long</span>, <span class="keywordtype">long</span>, <span class="keywordtype">long</span>);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> configTime(<span class="keywordtype">long</span> timezone, <span class="keywordtype">int</span> daylightOffset_sec,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* server1, <span class="keyword">const</span> <span class="keywordtype">char</span>* server2 = <span class="keyword">nullptr</span>, <span class="keyword">const</span> <span class="keywordtype">char</span>* server3 = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#include &quot;pins_arduino.h&quot;</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#include &quot;pins_arduino.h&quot;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -72,6 +72,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa62cf23018e6dd88ba369d6bd5bb9a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709b00d1ab53bf4830af8194ebabe199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a709b00d1ab53bf4830af8194ebabe199">addService</a> (String service, String proto, uint16_t port)</td></tr>
 <tr class="separator:a709b00d1ab53bf4830af8194ebabe199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d32c064bf8866741c92b9c78a9d836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a49d32c064bf8866741c92b9c78a9d836">enableArduino</a> (uint16_t port, bool auth=false)</td></tr>
+<tr class="separator:a49d32c064bf8866741c92b9c78a9d836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -92,8 +94,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a64ea7aca03b2f9805c95b77d7d4d32a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea9267dc8acdf3cdd6da911d2709ce3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#afea9267dc8acdf3cdd6da911d2709ce3">_hostName</a> [128]</td></tr>
 <tr class="separator:afea9267dc8acdf3cdd6da911d2709ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0aae5bcb31ce8091e47e8014a3b8e8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#afb0aae5bcb31ce8091e47e8014a3b8e8">_boardName</a> [64]</td></tr>
-<tr class="separator:afb0aae5bcb31ce8091e47e8014a3b8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb13de6011445685377244076a3fc93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a9fb13de6011445685377244076a3fc93">_arduinoAuth</a></td></tr>
+<tr class="separator:a9fb13de6011445685377244076a3fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9d1653bc6fcbbbd54b4365125f68bd7b"></a>
@@ -397,6 +399,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a49d32c064bf8866741c92b9c78a9d836"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::enableArduino </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>auth</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a77ed79d694accf4624ed563983f20b00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +441,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="afb0aae5bcb31ce8091e47e8014a3b8e8"></a>
+<a class="anchor" id="a9fb13de6011445685377244076a3fc93"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -421,7 +449,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char MDNSResponder::_boardName[64]</td>
+          <td class="memname">bool MDNSResponder::_arduinoAuth</td>
         </tr>
       </table>
   </td>

@@ -60,7 +60,7 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    HTTP_UPDATE_FAILD,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    HTTP_UPDATE_FAILED,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    HTTP_UPDATE_NO_UPDATES,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    HTTP_UPDATE_OK</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} t_httpUpdate_return;</div>
@@ -72,11 +72,13 @@
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        t_httpUpdate_return <a class="code" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7cf404d8cb00212189607871e1d412b1">update</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * host, uint16_t port, <span class="keyword">const</span> <span class="keywordtype">char</span> * url = <span class="stringliteral">&quot;/&quot;</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> * current_version = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        t_httpUpdate_return <a class="code" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7cf404d8cb00212189607871e1d412b1">update</a>(String host, uint16_t port, String url = <span class="stringliteral">&quot;/&quot;</span>, String current_version = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html">ESP8266HTTPUpdate</a> ESPhttpUpdate;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ESP8266HTTPUPDATE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        t_httpUpdate_return <a class="code" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7cf404d8cb00212189607871e1d412b1">update</a>(<a class="code" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a>&amp; client, <span class="keyword">const</span> <span class="keywordtype">char</span>* host, <span class="keyword">const</span> <span class="keywordtype">char</span>* url = <span class="stringliteral">&quot;/&quot;</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> * current_version = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html">ESP8266HTTPUpdate</a> ESPhttpUpdate;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ESP8266HTTPUPDATE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_wi_fi_client_html"><div class="ttname"><a href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a></div><div class="ttdef"><b>Definition:</b> WiFiClient.h:36</div></div>
 <div class="ttc" id="class_e_s_p8266_h_t_t_p_update_html_a5a33bbb5af5a64f527de2325d97fc2d1"><div class="ttname"><a href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a5a33bbb5af5a64f527de2325d97fc2d1">ESP8266HTTPUpdate::~ESP8266HTTPUpdate</a></div><div class="ttdeci">~ESP8266HTTPUpdate(void)</div><div class="ttdef"><b>Definition:</b> ESP8266httpUpdate.cpp:32</div></div>
 <div class="ttc" id="class_e_s_p8266_h_t_t_p_update_html"><div class="ttname"><a href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html">ESP8266HTTPUpdate</a></div><div class="ttdef"><b>Definition:</b> ESP8266httpUpdate.h:46</div></div>
 <div class="ttc" id="class_e_s_p8266_h_t_t_p_update_html_add367291c5e57bb33f02763832b0f259"><div class="ttname"><a href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#add367291c5e57bb33f02763832b0f259">ESP8266HTTPUpdate::ESP8266HTTPUpdate</a></div><div class="ttdeci">ESP8266HTTPUpdate(void)</div><div class="ttdef"><b>Definition:</b> ESP8266httpUpdate.cpp:28</div></div>

@@ -94,6 +94,8 @@
 , <a class="el" href="d3/d7a/class_client.html#a79a0b69fcee98478f989c54c25a129b4">Client</a>
 , <a class="el" href="d3/da7/class_client_context.html#a113e9687d97b0c9b553629897877ea95">ClientContext</a>
 , <a class="el" href="d6/df7/class_e_e_p_r_o_m_class.html#a8b1dd4ac3eb6681e0483ec952459c100">EEPROMClass</a>
+, <a class="el" href="d4/d50/class_ethernet_client.html#ab16797fb15ebf4bb3aa7c96a60b7e2d2">EthernetClient</a>
+, <a class="el" href="d4/d2a/class_ethernet_u_d_p.html#a14b34e1047dc0d8e635f18bed6e2d088">EthernetUDP</a>
 , <a class="el" href="d1/d31/class_file.html#a4c46a1975e66c37977bf07c58ec10b4e">File</a>
 , <a class="el" href="de/d6c/classfs_1_1_file.html#a13b40a3611064cb25b0425e512ed0a4a">fs::File</a>
 , <a class="el" href="d0/d36/classfs_1_1_file_impl.html#adfa2d7249c4181e8dede590344e7d0bc">fs::FileImpl</a>
@@ -104,9 +106,11 @@
 , <a class="el" href="d4/d8e/class_s_p_i_f_f_s_file_impl.html#a339ed33c92cca278ea279e4eacb8562a">SPIFFSFileImpl</a>
 , <a class="el" href="d0/d32/class_s_s_l_context.html#abb3c95325169fe983081328d7a246dc2">SSLContext</a>
 , <a class="el" href="d1/d51/class_stream.html#aea5dee9fcb038148515b7c9212d38dc0">Stream</a>
+, <a class="el" href="dc/da9/class_stream_string.html#ab7d91968451abc1d1bc5faf3beb9e2da">StreamString</a>
 , <a class="el" href="d9/d4b/class_two_wire.html#aa361b83500d00dfb93bb25b6473b33e9">TwoWire</a>
 , <a class="el" href="d3/d59/class_u_d_p.html#aa6f6357b921510120f1b686f79beaae1">UDP</a>
 , <a class="el" href="da/d0a/class_udp_context.html#a6834f5f38bc5b95d8bcc1e559cb1ebce">UdpContext</a>
+, <a class="el" href="d2/d0f/class_w5100_class.html#ac85656c9ef063e7957558434e5ce6a62">W5100Class</a>
 , <a class="el" href="dc/da7/class_wi_fi_client.html#a823bdc93651f12103ec4dddb4ee8581d">WiFiClient</a>
 , <a class="el" href="d2/d2f/class_wi_fi_client_secure.html#aaf83441b1d9d0f027b1f0c3b76bb439f">WiFiClientSecure</a>
 , <a class="el" href="d2/d8e/class_wi_fi_u_d_p.html#a7d499cfa189b3eaef46fd9e2e0a5d8c0">WiFiUDP</a>
@@ -116,6 +120,9 @@
 </li>
 <li>read_bytes()
 : <a class="el" href="d4/d46/class_one_wire.html#a2407440e8e25b624617593f8ad6447d4">OneWire</a>
+</li>
+<li>read_data()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a14d6bde48753c0a8b7abe610dc9540b9">W5100Class</a>
 </li>
 <li>read_page()
 : <a class="el" href="d2/db0/class_e_s_p8266_a_v_r_i_s_p.html#a33d753a1c1accd0e52c9e68f2e764c01">ESP8266AVRISP</a>
@@ -155,20 +162,129 @@
 <li>readEnd()
 : <a class="el" href="d6/dd9/class_sd2_card.html#a0de961537d051bbcafd87ed9fff5fe48">Sd2Card</a>
 </li>
+<li>readGAR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a1f580b747d38a06a7bf50cc9a180a27a">W5100Class</a>
+</li>
 <li>readID()
 : <a class="el" href="d9/d7a/class_t_f_t.html#ad9502a1ffec0bcdab0c6112553ddd18e">TFT</a>
+</li>
+<li>readIMR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a68141f7fa53393010a5aa3c57613fa31">W5100Class</a>
+</li>
+<li>readIR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a64558dd77ba676bfddba1d69f6a9e92d">W5100Class</a>
 </li>
 <li>readMicroseconds()
 : <a class="el" href="d2/d3c/class_servo.html#a43950424d146c1414460066483d9561b">Servo</a>
 </li>
+<li>readMR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a61dfdac161fffb345b9c0d6cb6ec0006">W5100Class</a>
+</li>
+<li>readPATR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a7f7c1b9f57a024c21434016790a7423f">W5100Class</a>
+</li>
+<li>readPMAGIC()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a4022f9580a21e1557b4a578750ac84e5">W5100Class</a>
+</li>
+<li>readPTIMER()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ac18b64304bd49124265b214d620e2a9e">W5100Class</a>
+</li>
+<li>readRCR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a660253e56601f592098e824411338624">W5100Class</a>
+</li>
 <li>readRegister()
 : <a class="el" href="d6/dd9/class_sd2_card.html#a1fa9f0bf1673a0ce7a51ed6330495978">Sd2Card</a>
+</li>
+<li>readRMSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a34c0e784743c893b73f693cdfd43d33f">W5100Class</a>
+</li>
+<li>readRTR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a671e8b13cc14e2ef4c83f08bfa3b85c3">W5100Class</a>
+</li>
+<li>readSHAR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ab4d652c557718859161480e9f8c7332b">W5100Class</a>
+</li>
+<li>readSIPR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#aea951d0a8c5626ae94e674d3eeab7fb7">W5100Class</a>
+</li>
+<li>readSn()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a46ae75522ff90d548ca9e752ca52f406">W5100Class</a>
+</li>
+<li>readSnCR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#abecb34f6487cf8a4656a6dad2267100e">W5100Class</a>
+</li>
+<li>readSnDHAR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#af6fa5a7d17a736bcbbf6a5e4539407c1">W5100Class</a>
+</li>
+<li>readSnDIPR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a41ac300b4ed5ad428456b1a1968550a0">W5100Class</a>
+</li>
+<li>readSnDPORT()
+: <a class="el" href="d2/d0f/class_w5100_class.html#aca5bd29bc52c9de8271dcfb5301a684b">W5100Class</a>
+</li>
+<li>readSnIR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a26165eb3eae3a8034098dae040300861">W5100Class</a>
+</li>
+<li>readSnMR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a2eccb114987ac7c023dd7686cda311ec">W5100Class</a>
+</li>
+<li>readSnMSSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ad67e4cfd6e9a665271f3231836c9ab4e">W5100Class</a>
+</li>
+<li>readSnPORT()
+: <a class="el" href="d2/d0f/class_w5100_class.html#af264541f8ef9b24d8192b64fa32edbff">W5100Class</a>
+</li>
+<li>readSnPROTO()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a1da99f3dbe59457e2e2ddfed5e2e96ea">W5100Class</a>
+</li>
+<li>readSnRX_RD()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a96bce17b484dc337ec6706b53e25e376">W5100Class</a>
+</li>
+<li>readSnRX_RSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ab5ca5024fd78b3962982a27aebcaa965">W5100Class</a>
+</li>
+<li>readSnRX_WR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ae81f77f37b724b5d7f5544a026933203">W5100Class</a>
+</li>
+<li>readSnSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a88a90a0a182fa88fcd77f1b0c551f989">W5100Class</a>
+</li>
+<li>readSnTOS()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a42e1bf0ec6574e76e5ee338e2d9e481e">W5100Class</a>
+</li>
+<li>readSnTTL()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a86eb26e7095cd6d7e47111a8df874803">W5100Class</a>
+</li>
+<li>readSnTX_FSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#addd90834a64b17e1a0cbb9134f3de8df">W5100Class</a>
+</li>
+<li>readSnTX_RD()
+: <a class="el" href="d2/d0f/class_w5100_class.html#ab2d3b126d62aba811b73531d8bc501ae">W5100Class</a>
+</li>
+<li>readSnTX_WR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#afd55d8184d422c01759b18f5097855e8">W5100Class</a>
 </li>
 <li>readString()
 : <a class="el" href="d1/d51/class_stream.html#a5acb5024a3c4565af581f58db2e56e54">Stream</a>
 </li>
 <li>readStringUntil()
-: <a class="el" href="d1/d51/class_stream.html#a2ca6e7720a295778798df45b900ae684">Stream</a>
+: <a class="el" href="de/d89/class_arduino_o_t_a_class.html#ac404216a5aa9e5089856ee5c16a3a759">ArduinoOTAClass</a>
+, <a class="el" href="d1/d51/class_stream.html#a2ca6e7720a295778798df45b900ae684">Stream</a>
+</li>
+<li>readSUBR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a809c428c74663e57663e278441f7c389">W5100Class</a>
+</li>
+<li>readTMSR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a57339ba7c256f18403252b9110a369a6">W5100Class</a>
+</li>
+<li>readUIPR()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a562b581c3c4f4c5c5adfd58ed9cfe571">W5100Class</a>
+</li>
+<li>readUPORT()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a2f15e972551f2dd2bbfa9d2de1a9a378">W5100Class</a>
+</li>
+<li>recv_data_processing()
+: <a class="el" href="d2/d0f/class_w5100_class.html#a6e0b5c08b265fd2e0b29c54c95735745">W5100Class</a>
 </li>
 <li>ref()
 : <a class="el" href="d3/da7/class_client_context.html#a7b1cbbb30b6bdc2ecd290f8c0e6ccf5d">ClientContext</a>
@@ -179,20 +295,22 @@
 : <a class="el" href="d0/de9/class_updater_class.html#ac6afe9df19d5ffb48409658ca77c86f6">UpdaterClass</a>
 </li>
 <li>remoteIP()
-: <a class="el" href="d3/d59/class_u_d_p.html#a91e07b1dd9fc75f7919838442579cd14">UDP</a>
+: <a class="el" href="d4/d2a/class_ethernet_u_d_p.html#a85517f4c08e80964f73b5af844528da1">EthernetUDP</a>
+, <a class="el" href="d3/d59/class_u_d_p.html#a91e07b1dd9fc75f7919838442579cd14">UDP</a>
 , <a class="el" href="dc/da7/class_wi_fi_client.html#ab15115ccc57049b5bbf3b17595a315f6">WiFiClient</a>
 , <a class="el" href="d2/d8e/class_wi_fi_u_d_p.html#a59f0cc4a8a6b282df4aa714729f28d4d">WiFiUDP</a>
 </li>
 <li>remotePort()
-: <a class="el" href="d3/d59/class_u_d_p.html#aecc57f6433d817262d37695a62a1125e">UDP</a>
+: <a class="el" href="d4/d2a/class_ethernet_u_d_p.html#a77a557ae9b68048ec69239e8ee980e10">EthernetUDP</a>
+, <a class="el" href="d3/d59/class_u_d_p.html#aecc57f6433d817262d37695a62a1125e">UDP</a>
 , <a class="el" href="dc/da7/class_wi_fi_client.html#afd4e7c0edff916d69b4a3d48aa1fe7b2">WiFiClient</a>
 , <a class="el" href="d2/d8e/class_wi_fi_u_d_p.html#afbb462d4239b67348c430828b4b43f9b">WiFiUDP</a>
 </li>
 <li>remove()
-: <a class="el" href="d0/de5/classfs_1_1_f_s.html#a56dffad802b44bcfee0fa5a571268ded">fs::FS</a>
+: <a class="el" href="d0/de5/classfs_1_1_f_s.html#a38317b4b6d1aa08b37c3080f8f27454e">fs::FS</a>
 , <a class="el" href="dc/d2c/classfs_1_1_f_s_impl.html#a29398cefe0416747e239aa2ff0a8a591">fs::FSImpl</a>
 , <a class="el" href="d7/d69/class_s_d_class.html#a0286f8bb49b66dfc1f7b176af9e6694b">SDClass</a>
-, <a class="el" href="d1/dfe/class_sd_file.html#ab932b7896dce90a29031f3a9039807a2">SdFile</a>
+, <a class="el" href="d1/dfe/class_sd_file.html#aaea53aa58f7577dfafd0da3cb084f6d1">SdFile</a>
 , <a class="el" href="db/d74/class_s_p_i_f_f_s_impl.html#aff9e0c93b0add9f68c74d6cb5ba848eb">SPIFFSImpl</a>
 </li>
 <li>rename()
@@ -206,6 +324,9 @@
 <li>replyWithIP()
 : <a class="el" href="d2/dce/class_d_n_s_server.html#a1c054557b8042422a0797492317a67d2">DNSServer</a>
 </li>
+<li>request_DHCP_lease()
+: <a class="el" href="d1/d80/class_dhcp_class.html#a0fdb95b3a3dae3443d19b638862fa6ff">DhcpClass</a>
+</li>
 <li>requestFrom()
 : <a class="el" href="d9/d4b/class_two_wire.html#ad40a27213d0bb32f7b819aa8962fccd3">TwoWire</a>
 </li>
@@ -216,12 +337,18 @@
 : <a class="el" href="d4/dd2/class_esp_class.html#a12287d932ec5dad5030621bacb6ef0eb">EspClass</a>
 , <a class="el" href="d4/d46/class_one_wire.html#a6a742a9112392567eae3d06dde067c07">OneWire</a>
 </li>
+<li>reset_DHCP_lease()
+: <a class="el" href="d1/d80/class_dhcp_class.html#afb42c856fb9d66fcc1899e1c77d22560">DhcpClass</a>
+</li>
 <li>reset_search()
 : <a class="el" href="d4/d46/class_one_wire.html#aae5efdf67928b5ee312ab7d7906416fa">OneWire</a>
 </li>
 <li>ResetInterrupt()
 : <a class="el" href="d3/dbe/struct_servo_timer0.html#a46bc61b0a8ae34bb1e956aad37d4114c">ServoTimer0</a>
 , <a class="el" href="d6/d58/struct_servo_timer1.html#af7fa84e5d240e76ae7c9adbd48c1b206">ServoTimer1</a>
+</li>
+<li>resetSS()
+: <a class="el" href="d2/d0f/class_w5100_class.html#afa77891f5b5b6c666308634472508597">W5100Class</a>
 </li>
 <li>restart()
 : <a class="el" href="d4/dd2/class_esp_class.html#a73ca2c0ca203650ada6c70a550f04a4f">EspClass</a>
@@ -251,7 +378,7 @@
 : <a class="el" href="d1/d6e/class_sd_volume.html#a5ea7bb3b2072b952c11b5614f1e69866">SdVolume</a>
 </li>
 <li>RSSI()
-: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#abf00fdf59279a8333ae07d162ec2ffaa">ESP8266WiFiClass</a>
+: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#a06d91cfb74c572b6f4da2cf6e27e033e">ESP8266WiFiClass</a>
 </li>
 <li>run()
 : <a class="el" href="d4/dd1/class_e_s_p8266_wi_fi_multi.html#a0e86008b476c85c396d47ddc175eb9fc">ESP8266WiFiMulti</a>

@@ -68,6 +68,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a31829c0f9d5f2f365fcaf95b5a459921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeae4d5cd5f2a8699d83af532c46e3c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#adeae4d5cd5f2a8699d83af532c46e3c5">printError</a> (<a class="el" href="../../d1/d51/class_stream.html">Stream</a> &amp;out)</td></tr>
 <tr class="separator:adeae4d5cd5f2a8699d83af532c46e3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40e648dcb71f7330e608034625830ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#af40e648dcb71f7330e608034625830ae">setMD5</a> (const char *expected_md5)</td></tr>
+<tr class="separator:af40e648dcb71f7330e608034625830ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006acd7e30ec87d602503a06f76de433"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#a006acd7e30ec87d602503a06f76de433">md5String</a> (void)</td></tr>
+<tr class="separator:a006acd7e30ec87d602503a06f76de433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e827d33adacc9a71577a298648b767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#ab0e827d33adacc9a71577a298648b767">md5</a> (uint8_t *result)</td></tr>
+<tr class="separator:ab0e827d33adacc9a71577a298648b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caead84e713c1e8168c5633b6ee215a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#a0caead84e713c1e8168c5633b6ee215a">getError</a> ()</td></tr>
 <tr class="separator:a0caead84e713c1e8168c5633b6ee215a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1edb68ebffe63c5978c48cd0b92f7246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#a1edb68ebffe63c5978c48cd0b92f7246">clearError</a> ()</td></tr>
@@ -111,6 +117,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1e8e5117c149ca7422c6555f06facdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3bac9b71d1af33dec4eb9c8ef26fca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#a5b3bac9b71d1af33dec4eb9c8ef26fca">_command</a></td></tr>
 <tr class="separator:a5b3bac9b71d1af33dec4eb9c8ef26fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5015731c9b23cacb3cb9af2f3a15d9c"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#ab5015731c9b23cacb3cb9af2f3a15d9c">_target_md5</a></td></tr>
+<tr class="separator:ab5015731c9b23cacb3cb9af2f3a15d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf643adb7aba8b755e8ba286e6202c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/db7/class_m_d5_builder.html">MD5Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_updater_class.html#accf643adb7aba8b755e8ba286e6202c5">_md5</a></td></tr>
+<tr class="separator:accf643adb7aba8b755e8ba286e6202c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4719c69f032b1ba4b008ad803267accf"></a>
@@ -292,6 +302,38 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab0e827d33adacc9a71577a298648b767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UpdaterClass::md5 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a006acd7e30ec87d602503a06f76de433"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String UpdaterClass::md5String </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="adeae4d5cd5f2a8699d83af532c46e3c5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -331,6 +373,22 @@ Private Attributes</h2></td></tr>
           <td class="memname">size_t UpdaterClass::remaining </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af40e648dcb71f7330e608034625830ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UpdaterClass::setMD5 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>expected_md5</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -514,6 +572,26 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="accf643adb7aba8b755e8ba286e6202c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/db7/class_m_d5_builder.html">MD5Builder</a> UpdaterClass::_md5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa36369fca30e34252ac271ed039b4c9c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -543,6 +621,26 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t UpdaterClass::_startAddress</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5015731c9b23cacb3cb9af2f3a15d9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String UpdaterClass::_target_md5</td>
         </tr>
       </table>
   </td>

@@ -67,6 +67,8 @@ Inheritance diagram for WiFiServer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad8ee2b9f1330eee479d93bef2fd59573"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#ad8ee2b9f1330eee479d93bef2fd59573">WiFiServer</a> (<a class="el" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> addr, uint16_t port)</td></tr>
+<tr class="separator:ad8ee2b9f1330eee479d93bef2fd59573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af248f23fd49a8b72d343059572f9d7cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#af248f23fd49a8b72d343059572f9d7cf">WiFiServer</a> (uint16_t port)</td></tr>
 <tr class="separator:af248f23fd49a8b72d343059572f9d7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab709ac18e8646616dc621487052923cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#ab709ac18e8646616dc621487052923cb">available</a> (uint8_t *<a class="el" href="../../da/de6/class_wi_fi_server.html#ad16f936581fd4d415910a52410291588">status</a>=NULL)</td></tr>
@@ -166,6 +168,8 @@ Static Protected Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a54375c839331b54d9c519b79e2ac8957"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#a54375c839331b54d9c519b79e2ac8957">_port</a></td></tr>
 <tr class="separator:a54375c839331b54d9c519b79e2ac8957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e27b6de0ef89555c0eac304a9562098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5c/class_i_p_address.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#a4e27b6de0ef89555c0eac304a9562098">_addr</a></td></tr>
+<tr class="separator:a4e27b6de0ef89555c0eac304a9562098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7515d4bbeb10eb7bc9757e3554f6d4"><td class="memItemLeft" align="right" valign="top">tcp_pcb *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#abd7515d4bbeb10eb7bc9757e3554f6d4">_pcb</a></td></tr>
 <tr class="separator:abd7515d4bbeb10eb7bc9757e3554f6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57e6d962ed6da655d26e94ad11e773f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/da7/class_client_context.html">ClientContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de6/class_wi_fi_server.html#aa57e6d962ed6da655d26e94ad11e773f">_unclaimed</a></td></tr>
@@ -174,6 +178,32 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7425804c420ce123096ba0a4ea4f19ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad8ee2b9f1330eee479d93bef2fd59573"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WiFiServer::WiFiServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5c/class_i_p_address.html">IPAddress</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af248f23fd49a8b72d343059572f9d7cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -488,6 +518,26 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4e27b6de0ef89555c0eac304a9562098"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> WiFiServer::_addr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7425804c420ce123096ba0a4ea4f19ac"></a>
 <div class="memitem">
 <div class="memproto">

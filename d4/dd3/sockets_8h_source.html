@@ -352,9 +352,9 @@
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#if LWIP_TIMEVAL_PRIVATE</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">struct </span>timeval {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">long</span>    tv_sec;         <span class="comment">/* seconds */</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordtype">long</span>    tv_usec;        <span class="comment">/* and microseconds */</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d1b/structtimeval.html">timeval</a> {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">long</span>    <a class="code" href="../../d1/d1b/structtimeval.html#aef6ddab1064c430758f9f913b7e4a21e">tv_sec</a>;         <span class="comment">/* seconds */</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordtype">long</span>    <a class="code" href="../../d1/d1b/structtimeval.html#a810bf8fcd58e255a5c1896d19538b86a">tv_usec</a>;        <span class="comment">/* and microseconds */</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;};</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LWIP_TIMEVAL_PRIVATE */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
@@ -380,7 +380,7 @@
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keywordtype">int</span> lwip_socket(<span class="keywordtype">int</span> domain, <span class="keywordtype">int</span> type, <span class="keywordtype">int</span> protocol);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keywordtype">int</span> lwip_write(<span class="keywordtype">int</span> s, <span class="keyword">const</span> <span class="keywordtype">void</span> *dataptr, <span class="keywordtype">size_t</span> size);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keywordtype">int</span> lwip_select(<span class="keywordtype">int</span> maxfdp1, fd_set *readset, fd_set *writeset, fd_set *exceptset,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keyword">struct</span> timeval *timeout);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keyword">struct</span> <a class="code" href="../../d1/d1b/structtimeval.html">timeval</a> *timeout);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keywordtype">int</span> lwip_ioctl(<span class="keywordtype">int</span> s, <span class="keywordtype">long</span> cmd, <span class="keywordtype">void</span> *argp);</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keywordtype">int</span> lwip_fcntl(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> cmd, <span class="keywordtype">int</span> val);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
@@ -418,7 +418,10 @@
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LWIP_SOCKET */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __LWIP_SOCKETS_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structtimeval_html_aef6ddab1064c430758f9f913b7e4a21e"><div class="ttname"><a href="../../d1/d1b/structtimeval.html#aef6ddab1064c430758f9f913b7e4a21e">timeval::tv_sec</a></div><div class="ttdeci">time_t tv_sec</div><div class="ttdef"><b>Definition:</b> time.c:26</div></div>
+<div class="ttc" id="structtimeval_html_a810bf8fcd58e255a5c1896d19538b86a"><div class="ttname"><a href="../../d1/d1b/structtimeval.html#a810bf8fcd58e255a5c1896d19538b86a">timeval::tv_usec</a></div><div class="ttdeci">suseconds_t tv_usec</div><div class="ttdef"><b>Definition:</b> time.c:27</div></div>
 <div class="ttc" id="structin__addr_html"><div class="ttname"><a href="../../da/d7e/structin__addr.html">in_addr</a></div><div class="ttdef"><b>Definition:</b> inet.h:44</div></div>
+<div class="ttc" id="structtimeval_html"><div class="ttname"><a href="../../d1/d1b/structtimeval.html">timeval</a></div><div class="ttdef"><b>Definition:</b> time.c:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
