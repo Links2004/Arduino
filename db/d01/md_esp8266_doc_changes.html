@@ -42,7 +42,14 @@
 <div class="contents">
 <div class="textblock"><hr/>
  <h2>title: Change Log </h2>
-<p><em>Current release</em></p>
+<h2>Current version</h2>
+<h3>Core</h3>
+<h3>Libraries</h3>
+<h3>Tools</h3>
+<hr/>
+ <h2>2.0.0</h2>
+<p>November 30, 2015</p>
+<p>Package link: <code><a href="http://arduino.esp8266.com/versions/2.0.0/package_esp8266com_index.json">http://arduino.esp8266.com/versions/2.0.0/package_esp8266com_index.json</a></code>.</p>
 <h3>Core</h3>
 <ul>
 <li>Add file system APIs and documentation</li>
@@ -52,6 +59,26 @@
 <li>Update documentation for NodeMCU and Olimex boards</li>
 <li>Disable interrupts inside ESP.getVcc (#567)</li>
 <li>Erase RTC RAM only if RF mode looks invalid (#619)</li>
+<li>Get pin levels at time of interrupt, rather than the time of calling the handler.</li>
+<li>Move interrupt handlers to ram.</li>
+<li>Improve debug output on critical errors</li>
+<li>Add ArduinoOTA library and docs</li>
+<li>Add WeMos D1 &amp; D1 mini boards</li>
+<li>Add documentation about boot messages and mode meaning</li>
+<li>Disable sleep mode before doing OTA (#1005)</li>
+<li>Add the ability to be called back when the device is about to reset</li>
+<li>Add "Reset Method" menu</li>
+<li>Add MD5 to core</li>
+<li>I2C: generate STOP in case of NACK (fix #698, #254)</li>
+<li>Add libc time functions</li>
+<li>Fix linker script for 512k(no SPIFFS) variant (#966)</li>
+<li>I2S optimizations</li>
+<li>Support Sketch &gt; Export compiled binary</li>
+<li>Update SPIFFS wrapper for 0.3.3</li>
+<li>Fix placement of code into RAM, enable gc-sections</li>
+<li>Make soft wdt reset more obvious</li>
+<li>Force disable IOSWAP for UART0 in <a class="el" href="../../d4/db1/class_hardware_serial.html">HardwareSerial</a> initialization (#744)</li>
+<li>Add <a class="el" href="../../dd/d5c/class_i_p_address.html#af00071ac24a5ed453e323f1535c9f33c">IPAddress::toString()</a></li>
 </ul>
 <h3>Libraries</h3>
 <ul>
@@ -61,6 +88,30 @@
 <li>ESP8266mDNS: allow to work on SoftAP interface</li>
 <li>EEPROM: round requested size to 4 bytes (#659)</li>
 <li>Add <a class="el" href="../../d2/db0/class_e_s_p8266_a_v_r_i_s_p.html">ESP8266AVRISP</a> library</li>
+<li>Add <a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html">ESP8266HTTPUpdate</a> library</li>
+<li>Add <a class="el" href="../../dd/d8d/class_h_t_t_p_client.html">HTTPClient</a> library</li>
+<li>Add <a class="el" href="../../d2/d2f/class_wi_fi_client_secure.html">WiFiClientSecure</a></li>
+<li>ESP8266WiFi library: add persistent option, fix #1054</li>
+<li>Make <a class="el" href="../../d7/d57/class_request_handler.html">RequestHandler</a> handle uploads</li>
+<li>Add Digest Authentication to OTA and espota.py</li>
+<li>Don't close <a class="el" href="../../d3/d59/class_u_d_p.html">UDP</a> pcbs when WiFi connection drops (#969)</li>
+<li>Add espsoftwareserial library</li>
+<li>Add HTTP Updater library</li>
+<li>Add Ethernet library for W5100</li>
+<li>Add SPIFFS WebServer Example</li>
+<li>add dnsIP() to ESP8266WiFi class</li>
+<li>OTA support encapsulated to ArduinoOTA class</li>
+<li>Add gdb stub library</li>
+<li>Extracted the WebUpdate example into a library.</li>
+<li>Fix to <a class="el" href="../../d2/d3c/class_servo.html">Servo</a> allowing write() to be called before attach()</li>
+<li>ESP8266WiFi: add function <code>begin</code> without any parameters and add <code>psk</code> function to return current PSK form sdk config</li>
+<li>Fix a crash due to abort() called from TCP error callback (#428)</li>
+<li>Adding support for OPTIONS requests to <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html">ESP8266WebServer</a></li>
+<li>Add HTTPS request sample (#43)</li>
+<li>Fix _useClientMode &amp; _useApMode in SDK auto connect mode (#754)</li>
+<li>Add <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a147172fa7868b853338d6aead5034892">ESP8266WebServer::sendContent_P</a> with 'size_t size' argument for binary content</li>
+<li>Fix bug in <a class="el" href="../../dc/da7/class_wi_fi_client.html#af3292341f01e4fa2478f825ac255ffd5">WiFiClient::write_P</a> when content was binary</li>
+<li>Add <a class="el" href="../../dc/da7/class_wi_fi_client.html#af3292341f01e4fa2478f825ac255ffd5">WiFiClient::write_P</a> to be used with PROGMEM</li>
 </ul>
 <h3>Tools</h3>
 <ul>

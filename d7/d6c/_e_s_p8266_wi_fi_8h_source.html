@@ -45,25 +45,25 @@
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  ESP8266WiFi.h - esp8266 Wifi support.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  Based on WiFi.h from Ardiono WiFi shield library.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (c) 2011-2014 Arduino.  All right reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">  Modified by Ivan Grokhotkov, December 2014</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> ESP8266WiFi.h - esp8266 Wifi support.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Based on WiFi.h from Ardiono WiFi shield library.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> Copyright (c) 2011-2014 Arduino.  All right reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> Modified by Ivan Grokhotkov, December 2014</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> version 2.1 of the License, or (at your option) any later version.</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">  Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> Lesser General Public License for more details.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  License along with this library; if not, write to the Free Software</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef WiFi_h</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define WiFi_h</span></div>
@@ -71,397 +71,77 @@
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">  #include &quot;include/wl_definitions.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;include/wl_definitions.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;IPAddress.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;WiFiClient.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;WiFiServer.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;WiFiClientSecure.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define WIFI_SCAN_RUNNING   (-1)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define WIFI_SCAN_FAILED     (-2)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ESP8266WiFiType.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ESP8266WiFiSTA.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ESP8266WiFiAP.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ESP8266WiFiScan.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;ESP8266WiFiGeneric.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">enum</span> WiFiMode { WIFI_OFF = 0, WIFI_STA = 1, WIFI_AP = 2, WIFI_AP_STA = 3 };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aef227857f54a8aa962e44777a5f5775e">ESP8266WiFiClass</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6309c1809b37de305f79c3c5ddbee201">persistent</a>(<span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6309c1809b37de305f79c3c5ddbee201">persistent</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;WiFiClient.h&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;WiFiServer.h&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;WiFiClientSecure.h&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a> : <span class="keyword">public</span> <a class="code" href="../../d0/d52/class_e_s_p8266_wi_fi_generic_class.html">ESP8266WiFiGenericClass</a>, <span class="keyword">public</span> <a class="code" href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html">ESP8266WiFiSTAClass</a>, <span class="keyword">public</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html">ESP8266WiFiScanClass</a>, <span class="keyword">public</span> <a class="code" href="../../d4/daa/class_e_s_p8266_wi_fi_a_p_class.html">ESP8266WiFiAPClass</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// workaround same function name with different signature</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/d52/class_e_s_p8266_wi_fi_generic_class.html#af325c0d6dd6a104a820b5ba12d6b0129">ESP8266WiFiGenericClass::channel</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6c0f74952bce5b59eac8e2bebc61d915">mode</a>(WiFiMode);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    WiFiMode <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a135b2c60dad70851087e760b8d3a02a3">getMode</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#afde7cd16acfb2d64fbab387d1e76887b">begin</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ssid, <span class="keyword">const</span> <span class="keywordtype">char</span> *passphrase = NULL, int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">channel</a> = 0, <span class="keyword">const</span> uint8_t* bssid = NULL);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#afde7cd16acfb2d64fbab387d1e76887b">begin</a>(<span class="keywordtype">char</span>* ssid, <span class="keywordtype">char</span> *passphrase = NULL, int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">channel</a> = 0, <span class="keyword">const</span> uint8_t* bssid = NULL);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Use sdk config to connect.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#afde7cd16acfb2d64fbab387d1e76887b">begin</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a694b15de155ff966d2a58fa958aa071e">ESP8266WiFiSTAClass::SSID</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#ae7b509d19668ea9add6ddb4ca0e11655">ESP8266WiFiSTAClass::RSSI</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a94a45deb6161750bb8167e1503c2b7f2">ESP8266WiFiSTAClass::BSSID</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a22d2ce7ec1eab3cd362b4fbd3e76ed81">ESP8266WiFiSTAClass::BSSIDstr</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#af8e238e863ec70d894214e40d793c7e0">ESP8266WiFiScanClass::SSID</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a4e1c5f630788ca617b627fc4061fbcbd">ESP8266WiFiScanClass::encryptionType</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a1559744e3d965132cb189115f0b3130f">ESP8266WiFiScanClass::RSSI</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a1a0e2120557e134a82ca1f59fcff90e9">ESP8266WiFiScanClass::BSSID</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a826bab3068d51b93f31eff89fa091327">ESP8266WiFiScanClass::BSSIDstr</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a9c67c1dfb440631f6d2c3b4c1d8e6da0">ESP8266WiFiScanClass::channel</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a5fd148aeae8ba599a416ea4a89e9614e">ESP8266WiFiScanClass::isHidden</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// ----------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// ------------------------------------------- Debug --------------------------------------------</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// ----------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="comment">/* Wait for Wifi connection to reach a result</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    * returns the status reached or disconnect if STA is off</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    uint8_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aaaa757e694296affe1c90b01d2696755">waitForConnectResult</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a808ad7c1939d9be704faf1c89f8bc41c">printDiag</a>(<a class="code" href="../../d8/d90/class_print.html">Print</a>&amp; dest);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a345922aa4e6447b6555ffad19e236898">   70</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a98a487eb7fb049868f04e033efbed38f">   71</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../da/de6/class_wi_fi_server.html">WiFiServer</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">/* Set up an open access point</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     * param ssid: Pointer to the SSID string.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a08b2145b6ac08979876fdea422429925">softAP</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ssid);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">/* Set up a WPA2-secured access point</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * param ssid: Pointer to the SSID string.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * param passphrase: Pointer to passphrase, 8 characters min.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     * param channel: WiFi channel number, 1 - 13.</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * param ssid_hidden: Network cloaking? 0 = broadcast SSID, 1 = hide SSID</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a08b2145b6ac08979876fdea422429925">softAP</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ssid, <span class="keyword">const</span> <span class="keywordtype">char</span>* passphrase, <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">channel</a> = 1, <span class="keywordtype">int</span> ssid_hidden = 0);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">/* Change Ip configuration settings disabling the dhcp client</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">        *</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">        * param local_ip:   Static ip configuration</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        * param gateway:    Static gateway configuration</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">        * param subnet:     Static Subnet mask</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac7430d55787020f12764d97194c19b43">config</a>(<a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> local_ip, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> gateway, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> subnet);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">/* Change Ip configuration settings disabling the dhcp client</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">        *</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">        * param local_ip:   Static ip configuration</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">        * param gateway:    Static gateway configuration</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">        * param subnet:     Static Subnet mask</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">        * param dns:        Defined DNS</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac7430d55787020f12764d97194c19b43">config</a>(<a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> local_ip, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> gateway, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> subnet, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> dns);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">/* Configure access point</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">     * param local_ip: access point IP</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     * param gateway: gateway IP</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * param subnet: subnet mask</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac469c8400fc609785849008726980b04">softAPConfig</a>(<a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> local_ip, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> gateway, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> subnet);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">      * Disconnect from the network (close AP)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">      *</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">      * return: one value of wl_status_t enum</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">      */</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a2b475712b55db482513a4d110d6eda20">softAPdisconnect</a>(<span class="keywordtype">bool</span> wifioff = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">     * Disconnect from the network</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">     * return: one value of wl_status_t enum</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a7eeffdd01a64efc8a12814898e953db4">disconnect</a>(<span class="keywordtype">bool</span> wifioff = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">     * Get the station interface MAC address.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">     * return: pointer to uint8_t array with length WL_MAC_ADDR_LENGTH</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">     * return: String</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    uint8_t* <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#acebfbdfc56b8b7c67fe0548ddae259fc">macAddress</a>(uint8_t* mac);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#acebfbdfc56b8b7c67fe0548ddae259fc">macAddress</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">     * Get the softAP interface MAC address.</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">     * return: pointer to uint8_t array with length WL_MAC_ADDR_LENGTH</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">     * return: String</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    uint8_t* <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a2ea7bf5ac62323702c745a156604ee2b">softAPmacAddress</a>(uint8_t* mac);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a2ea7bf5ac62323702c745a156604ee2b">softAPmacAddress</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     * Get the station interface IP address.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">     * return: Ip address value</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#abd0ef0839c54e734cd10c2a7cd2ae019">localIP</a>();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">     * Get the softAP interface IP address.</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">     * return: Ip address value</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a52c8d0638d860f1cf215ec8381714baf">softAPIP</a>();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">     * Get the interface subnet mask address.</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">     * return: subnet mask address value</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a8b0a1484203f47c7391c3b7aa04fea6c">subnetMask</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">     * Get the gateway ip address.</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">     * return: gateway ip address value</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;   <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aeff48c35e57270e3b849ae460297ed64">gatewayIP</a>();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">     * Get the DNS ip address.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">     * return: DNS ip address value</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;   <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a50a7cd3ba9206b8efac5609a2511f751">dnsIP</a>(<span class="keywordtype">int</span> dns_no = 0);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">     * Return the current SSID associated with the network</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">     * return: ssid string</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a5fa71b4075baf0758dc67a751c9c45fe">SSID</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">     * Return the current pre shared key associated with the network</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">     * return: psk string</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ad21ec17a2d6ec20c38597b4a3bed182f">psk</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">     * Return the current bssid / mac associated with the network if configured</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">     * return: bssid uint8_t *</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    uint8_t *<a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a8878fe8a5752f95f00fb020bef61a657">BSSID</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">     * Return the current bssid / mac associated with the network if configured</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">     * return: bssid string</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6a2efcd899d61c1ba8867d42c0b83edd">BSSIDstr</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">     * Return the current channel associated with the network</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">     * return: channel</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">channel</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">     * Return the current network RSSI.</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">     * return: RSSI value</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a06d91cfb74c572b6f4da2cf6e27e033e">RSSI</a>();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">     * called to get the scan state in Async mode</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">     * return -1 if scan not fin</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">     * return -2 if scan not triggered</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    int8_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a644bbba41d6cd69e18f33b4f8ceab649">scanComplete</a>();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">     * delete last scan result from RAM</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a4c73e1776df28b91211bbf9fc23d8583">scanDelete</a>();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">     * Start scan WiFi networks available</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">     * return: Number of discovered networks</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    int8_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a9e80837fdb83d656c8cbf71e0c583a14">scanNetworks</a>(<span class="keywordtype">bool</span> async = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">     * Return the SSID discovered during the network scan.</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">     * param networkItem: specify from which network item want to get the information</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">     * return: ssid string of the specified item on the networks scanned list</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a5fa71b4075baf0758dc67a751c9c45fe">SSID</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">     * Return the encryption type of the networks discovered during the scanNetworks</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">     * param networkItem: specify from which network item want to get the information</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">     * return: encryption type (enum wl_enc_type) of the specified item on the networks scanned list</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    uint8_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a00059f82b97f873545db618bc35feda6">encryptionType</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">     * Return the RSSI of the networks discovered during the scanNetworks</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">     * param networkItem: specify from which network item want to get the information</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">     * return: signed value of RSSI of the specified item on the networks scanned list</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a06d91cfb74c572b6f4da2cf6e27e033e">RSSI</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    uint8_t * <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a8878fe8a5752f95f00fb020bef61a657">BSSID</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6a2efcd899d61c1ba8867d42c0b83edd">BSSIDstr</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    int32_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">channel</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aa927a293d4c47e6714bf27afe02eafe7">isHidden</a>(uint8_t networkItem);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae4ad7d321bd03d359665f88b6b5f47fd">getNetworkInfo</a>(uint8_t networkItem, String &amp;ssid, uint8_t &amp;encryptionType, int32_t &amp;RSSI, uint8_t* &amp;BSSID, int32_t &amp;channel, <span class="keywordtype">bool</span> &amp;isHidden);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">     * Return Connection status.</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">     * return: one of the value defined in wl_status_t</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    wl_status_t <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a578c477f270f1da6293e9a2e159e3f03">status</a>();</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">     * Resolve the given hostname to an IP address.</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">     * param aHostname: Name to be resolved</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">     * param aResult: IPAddress structure to store the returned IP address</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">     * result: 1 if aIPAddrString was successfully converted to an IP address,</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">     *          else error code</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aff5a15cb4b44244020d503dd21e96a66">hostByName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* aHostname, <a class="code" href="../../dd/d5c/class_i_p_address.html">IPAddress</a>&amp; aResult);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">     * Get ESP8266 station DHCP hostname</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    String <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aba5d3692ca38cd49f0639848f8d16811">hostname</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">     * Set ESP8266 station DHCP hostname</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">     * hostname, max length:32</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aba5d3692ca38cd49f0639848f8d16811">hostname</a>(<span class="keywordtype">char</span>* aHostname);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aba5d3692ca38cd49f0639848f8d16811">hostname</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* aHostname);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aba5d3692ca38cd49f0639848f8d16811">hostname</a>(String aHostname);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a606938c0e0e7145403f898f120c817bd">beginWPSConfig</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">     * Output WiFi settings to an object derived from Print interface (like Serial).</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a808ad7c1939d9be704faf1c89f8bc41c">printDiag</a>(<a class="code" href="../../d8/d90/class_print.html">Print</a>&amp; dest);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">     * Start SmartConfig</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#acd3db6e049d0b1fd4bbe334faf7c2aa8">beginSmartConfig</a>();</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">     * Query SmartConfig status, to decide when stop config</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#add88e3a30d67f3a078c8d16299c7dff8">smartConfigDone</a>();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">     * Stop SmartConfig</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac294b02775df3084501023d874f320e7">stopSmartConfig</a>();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a345922aa4e6447b6555ffad19e236898">  375</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a98a487eb7fb049868f04e033efbed38f">  376</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../da/de6/class_wi_fi_server.html">WiFiServer</a>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a25483c70c8fe8e4783dd1ca3822b1779">_mode</a>(WiFiMode);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae4c8bc2b1866f84d3bc9539ed6e873bf">_scanDone</a>(<span class="keywordtype">void</span>* result, <span class="keywordtype">int</span> status);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">void</span> * <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a863e9a61a19ff653d6412ecf775ce82d">_getScanInfoByIndex</a>(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#af03a006551b3f5f11625036bc149b4e3">_smartConfigCallback</a>(uint32_t status, <span class="keywordtype">void</span>* result);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a4b3ea339441a9013653cd60f19d539c3">_eventCallback</a>(<span class="keywordtype">void</span> *event);</div>
-<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0fea7e314d5d557b37a8a23a0c3405bd">  384</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0fea7e314d5d557b37a8a23a0c3405bd">_smartConfigStarted</a>;</div>
-<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae3ec17c0ac26ced9980444269b13f1e4">  385</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae3ec17c0ac26ced9980444269b13f1e4">_smartConfigDone</a>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0808e2927d0935105aed5935395726a7">  387</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0808e2927d0935105aed5935395726a7">_useApMode</a>;</div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#af1fdc2fd995bc0165ab47efa8e8041ff">  388</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#af1fdc2fd995bc0165ab47efa8e8041ff">_useClientMode</a>;</div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac073a46b2f7b4c0a25be83bafbb89752">  389</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac073a46b2f7b4c0a25be83bafbb89752">_useStaticIp</a>;</div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a298bbc8b3ff70b4f44ac651910720aac">  390</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a298bbc8b3ff70b4f44ac651910720aac">_persistent</a>;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a18d87a5d9a68090ac0d24c6ef34de408">  392</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a18d87a5d9a68090ac0d24c6ef34de408">_scanAsync</a>;</div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ad10fa9d2b2fd13559f7733228e91c098">  393</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ad10fa9d2b2fd13559f7733228e91c098">_scanStarted</a>;</div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a12104c8b0fe298ab7d695be68cae1072">  394</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a12104c8b0fe298ab7d695be68cae1072">_scanComplete</a>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac8efeb66367aab417219e4e8347551cc">  396</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac8efeb66367aab417219e4e8347551cc">_scanCount</a>;</div>
-<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aed79e0fa0b3cf1f74333e80427feda83">  397</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aed79e0fa0b3cf1f74333e80427feda83">_scanResult</a>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;};</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a> WiFi;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a7eeffdd01a64efc8a12814898e953db4"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a7eeffdd01a64efc8a12814898e953db4">ESP8266WiFiClass::disconnect</a></div><div class="ttdeci">int disconnect(bool wifioff=false)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:272</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ae4ad7d321bd03d359665f88b6b5f47fd"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae4ad7d321bd03d359665f88b6b5f47fd">ESP8266WiFiClass::getNetworkInfo</a></div><div class="ttdeci">bool getNetworkInfo(uint8_t networkItem, String &amp;ssid, uint8_t &amp;encryptionType, int32_t &amp;RSSI, uint8_t *&amp;BSSID, int32_t &amp;channel, bool &amp;isHidden)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:667</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_abd0ef0839c54e734cd10c2a7cd2ae019"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#abd0ef0839c54e734cd10c2a7cd2ae019">ESP8266WiFiClass::localIP</a></div><div class="ttdeci">IPAddress localIP()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:420</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a50a7cd3ba9206b8efac5609a2511f751"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a50a7cd3ba9206b8efac5609a2511f751">ESP8266WiFiClass::dnsIP</a></div><div class="ttdeci">IPAddress dnsIP(int dns_no=0)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:448</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ac294b02775df3084501023d874f320e7"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac294b02775df3084501023d874f320e7">ESP8266WiFiClass::stopSmartConfig</a></div><div class="ttdeci">void stopSmartConfig()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:866</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a> WiFi;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_generic_class_html"><div class="ttname"><a href="../../d0/d52/class_e_s_p8266_wi_fi_generic_class.html">ESP8266WiFiGenericClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFiGeneric.h:35</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a826bab3068d51b93f31eff89fa091327"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a826bab3068d51b93f31eff89fa091327">ESP8266WiFiScanClass::BSSIDstr</a></div><div class="ttdeci">String BSSIDstr(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:240</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_af8e238e863ec70d894214e40d793c7e0"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#af8e238e863ec70d894214e40d793c7e0">ESP8266WiFiScanClass::SSID</a></div><div class="ttdeci">String SSID(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:171</div></div>
 <div class="ttc" id="class_wi_fi_client_html"><div class="ttname"><a href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a></div><div class="ttdef"><b>Definition:</b> WiFiClient.h:36</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a8878fe8a5752f95f00fb020bef61a657"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a8878fe8a5752f95f00fb020bef61a657">ESP8266WiFiClass::BSSID</a></div><div class="ttdeci">uint8_t * BSSID(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:468</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aa927a293d4c47e6714bf27afe02eafe7"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aa927a293d4c47e6714bf27afe02eafe7">ESP8266WiFiClass::isHidden</a></div><div class="ttdeci">bool isHidden(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:658</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a2ea7bf5ac62323702c745a156604ee2b"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a2ea7bf5ac62323702c745a156604ee2b">ESP8266WiFiClass::softAPmacAddress</a></div><div class="ttdeci">String softAPmacAddress(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:410</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aed79e0fa0b3cf1f74333e80427feda83"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aed79e0fa0b3cf1f74333e80427feda83">ESP8266WiFiClass::_scanResult</a></div><div class="ttdeci">static void * _scanResult</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:397</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a8b0a1484203f47c7391c3b7aa04fea6c"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a8b0a1484203f47c7391c3b7aa04fea6c">ESP8266WiFiClass::subnetMask</a></div><div class="ttdeci">IPAddress subnetMask()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:434</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ac7430d55787020f12764d97194c19b43"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac7430d55787020f12764d97194c19b43">ESP8266WiFiClass::config</a></div><div class="ttdeci">void config(IPAddress local_ip, IPAddress gateway, IPAddress subnet)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:214</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ad21ec17a2d6ec20c38597b4a3bed182f"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ad21ec17a2d6ec20c38597b4a3bed182f">ESP8266WiFiClass::psk</a></div><div class="ttdeci">String psk() const </div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:461</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a6309c1809b37de305f79c3c5ddbee201"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6309c1809b37de305f79c3c5ddbee201">ESP8266WiFiClass::persistent</a></div><div class="ttdeci">void persistent(bool persistent)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:56</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ae3ec17c0ac26ced9980444269b13f1e4"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae3ec17c0ac26ced9980444269b13f1e4">ESP8266WiFiClass::_smartConfigDone</a></div><div class="ttdeci">bool _smartConfigDone</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:385</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a135b2c60dad70851087e760b8d3a02a3"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a135b2c60dad70851087e760b8d3a02a3">ESP8266WiFiClass::getMode</a></div><div class="ttdeci">WiFiMode getMode()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:83</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_acebfbdfc56b8b7c67fe0548ddae259fc"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#acebfbdfc56b8b7c67fe0548ddae259fc">ESP8266WiFiClass::macAddress</a></div><div class="ttdeci">String macAddress(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:394</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_af1fdc2fd995bc0165ab47efa8e8041ff"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#af1fdc2fd995bc0165ab47efa8e8041ff">ESP8266WiFiClass::_useClientMode</a></div><div class="ttdeci">bool _useClientMode</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:388</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a578c477f270f1da6293e9a2e159e3f03"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a578c477f270f1da6293e9a2e159e3f03">ESP8266WiFiClass::status</a></div><div class="ttdeci">wl_status_t status()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:712</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ac469c8400fc609785849008726980b04"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac469c8400fc609785849008726980b04">ESP8266WiFiClass::softAPConfig</a></div><div class="ttdeci">void softAPConfig(IPAddress local_ip, IPAddress gateway, IPAddress subnet)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:377</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a52c8d0638d860f1cf215ec8381714baf"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a52c8d0638d860f1cf215ec8381714baf">ESP8266WiFiClass::softAPIP</a></div><div class="ttdeci">IPAddress softAPIP()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:427</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aef227857f54a8aa962e44777a5f5775e"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aef227857f54a8aa962e44777a5f5775e">ESP8266WiFiClass::ESP8266WiFiClass</a></div><div class="ttdeci">ESP8266WiFiClass()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:44</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a06d91cfb74c572b6f4da2cf6e27e033e"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a06d91cfb74c572b6f4da2cf6e27e033e">ESP8266WiFiClass::RSSI</a></div><div class="ttdeci">int32_t RSSI()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:490</div></div>
-<div class="ttc" id="class_i_p_address_html"><div class="ttname"><a href="../../dd/d5c/class_i_p_address.html">IPAddress</a></div><div class="ttdef"><b>Definition:</b> IPAddress.h:29</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a4b3ea339441a9013653cd60f19d539c3"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a4b3ea339441a9013653cd60f19d539c3">ESP8266WiFiClass::_eventCallback</a></div><div class="ttdeci">static void _eventCallback(void *event)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:902</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a5fa71b4075baf0758dc67a751c9c45fe"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a5fa71b4075baf0758dc67a751c9c45fe">ESP8266WiFiClass::SSID</a></div><div class="ttdeci">String SSID() const </div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:454</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a08b2145b6ac08979876fdea422429925"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a08b2145b6ac08979876fdea422429925">ESP8266WiFiClass::softAP</a></div><div class="ttdeci">void softAP(const char *ssid)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:314</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a2b475712b55db482513a4d110d6eda20"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a2b475712b55db482513a4d110d6eda20">ESP8266WiFiClass::softAPdisconnect</a></div><div class="ttdeci">int softAPdisconnect(bool wifioff=false)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:245</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a606938c0e0e7145403f898f120c817bd"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a606938c0e0e7145403f898f120c817bd">ESP8266WiFiClass::beginWPSConfig</a></div><div class="ttdeci">bool beginWPSConfig(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:799</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ad10fa9d2b2fd13559f7733228e91c098"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ad10fa9d2b2fd13559f7733228e91c098">ESP8266WiFiClass::_scanStarted</a></div><div class="ttdeci">static bool _scanStarted</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:393</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_af03a006551b3f5f11625036bc149b4e3"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#af03a006551b3f5f11625036bc149b4e3">ESP8266WiFiClass::_smartConfigCallback</a></div><div class="ttdeci">static void _smartConfigCallback(uint32_t status, void *result)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:883</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a0808e2927d0935105aed5935395726a7"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0808e2927d0935105aed5935395726a7">ESP8266WiFiClass::_useApMode</a></div><div class="ttdeci">bool _useApMode</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:387</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_afde7cd16acfb2d64fbab387d1e76887b"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#afde7cd16acfb2d64fbab387d1e76887b">ESP8266WiFiClass::begin</a></div><div class="ttdeci">int begin()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:193</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ab0903dbc0d4e328f2273522d9d3f6185"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ab0903dbc0d4e328f2273522d9d3f6185">ESP8266WiFiClass::channel</a></div><div class="ttdeci">int32_t channel(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:485</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aba5d3692ca38cd49f0639848f8d16811"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aba5d3692ca38cd49f0639848f8d16811">ESP8266WiFiClass::hostname</a></div><div class="ttdeci">String hostname(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:753</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a1559744e3d965132cb189115f0b3130f"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a1559744e3d965132cb189115f0b3130f">ESP8266WiFiScanClass::RSSI</a></div><div class="ttdeci">int32_t RSSI(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:213</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a9c67c1dfb440631f6d2c3b4c1d8e6da0"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a9c67c1dfb440631f6d2c3b4c1d8e6da0">ESP8266WiFiScanClass::channel</a></div><div class="ttdeci">int32_t channel(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:250</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a1a0e2120557e134a82ca1f59fcff90e9"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a1a0e2120557e134a82ca1f59fcff90e9">ESP8266WiFiScanClass::BSSID</a></div><div class="ttdeci">uint8_t * BSSID(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:227</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_s_t_a_class_html_a94a45deb6161750bb8167e1503c2b7f2"><div class="ttname"><a href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a94a45deb6161750bb8167e1503c2b7f2">ESP8266WiFiSTAClass::BSSID</a></div><div class="ttdeci">uint8_t * BSSID()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiSTA.cpp:469</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a5fd148aeae8ba599a416ea4a89e9614e"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a5fd148aeae8ba599a416ea4a89e9614e">ESP8266WiFiScanClass::isHidden</a></div><div class="ttdeci">bool isHidden(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:263</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_a_p_class_html"><div class="ttname"><a href="../../d4/daa/class_e_s_p8266_wi_fi_a_p_class.html">ESP8266WiFiAPClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFiAP.h:31</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html_a4e1c5f630788ca617b627fc4061fbcbd"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a4e1c5f630788ca617b627fc4061fbcbd">ESP8266WiFiScanClass::encryptionType</a></div><div class="ttdeci">uint8_t encryptionType(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.cpp:186</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_s_t_a_class_html_a22d2ce7ec1eab3cd362b4fbd3e76ed81"><div class="ttname"><a href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a22d2ce7ec1eab3cd362b4fbd3e76ed81">ESP8266WiFiSTAClass::BSSIDstr</a></div><div class="ttdeci">String BSSIDstr()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiSTA.cpp:479</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_s_t_a_class_html_ae7b509d19668ea9add6ddb4ca0e11655"><div class="ttname"><a href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#ae7b509d19668ea9add6ddb4ca0e11655">ESP8266WiFiSTAClass::RSSI</a></div><div class="ttdeci">int32_t RSSI()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiSTA.cpp:491</div></div>
 <div class="ttc" id="class_print_html"><div class="ttname"><a href="../../d8/d90/class_print.html">Print</a></div><div class="ttdef"><b>Definition:</b> Print.h:34</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a0fea7e314d5d557b37a8a23a0c3405bd"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a0fea7e314d5d557b37a8a23a0c3405bd">ESP8266WiFiClass::_smartConfigStarted</a></div><div class="ttdeci">bool _smartConfigStarted</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:384</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a18d87a5d9a68090ac0d24c6ef34de408"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a18d87a5d9a68090ac0d24c6ef34de408">ESP8266WiFiClass::_scanAsync</a></div><div class="ttdeci">static bool _scanAsync</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:392</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aeff48c35e57270e3b849ae460297ed64"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aeff48c35e57270e3b849ae460297ed64">ESP8266WiFiClass::gatewayIP</a></div><div class="ttdeci">IPAddress gatewayIP()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:441</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a00059f82b97f873545db618bc35feda6"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a00059f82b97f873545db618bc35feda6">ESP8266WiFiClass::encryptionType</a></div><div class="ttdeci">uint8_t encryptionType(uint8_t networkItem)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:692</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a644bbba41d6cd69e18f33b4f8ceab649"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a644bbba41d6cd69e18f33b4f8ceab649">ESP8266WiFiClass::scanComplete</a></div><div class="ttdeci">int8_t scanComplete()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:540</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aff5a15cb4b44244020d503dd21e96a66"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aff5a15cb4b44244020d503dd21e96a66">ESP8266WiFiClass::hostByName</a></div><div class="ttdeci">int hostByName(const char *aHostname, IPAddress &amp;aResult)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:735</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:41</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a298bbc8b3ff70b4f44ac651910720aac"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a298bbc8b3ff70b4f44ac651910720aac">ESP8266WiFiClass::_persistent</a></div><div class="ttdeci">bool _persistent</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:390</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_acd3db6e049d0b1fd4bbe334faf7c2aa8"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#acd3db6e049d0b1fd4bbe334faf7c2aa8">ESP8266WiFiClass::beginSmartConfig</a></div><div class="ttdeci">void beginSmartConfig()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:846</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a4c73e1776df28b91211bbf9fc23d8583"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a4c73e1776df28b91211bbf9fc23d8583">ESP8266WiFiClass::scanDelete</a></div><div class="ttdeci">void scanDelete()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:553</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ac8efeb66367aab417219e4e8347551cc"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac8efeb66367aab417219e4e8347551cc">ESP8266WiFiClass::_scanCount</a></div><div class="ttdeci">static size_t _scanCount</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:396</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a12104c8b0fe298ab7d695be68cae1072"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a12104c8b0fe298ab7d695be68cae1072">ESP8266WiFiClass::_scanComplete</a></div><div class="ttdeci">static bool _scanComplete</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:394</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_add88e3a30d67f3a078c8d16299c7dff8"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#add88e3a30d67f3a078c8d16299c7dff8">ESP8266WiFiClass::smartConfigDone</a></div><div class="ttdeci">bool smartConfigDone()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:875</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_aaaa757e694296affe1c90b01d2696755"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#aaaa757e694296affe1c90b01d2696755">ESP8266WiFiClass::waitForConnectResult</a></div><div class="ttdeci">uint8_t waitForConnectResult()</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:204</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a6c0f74952bce5b59eac8e2bebc61d915"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6c0f74952bce5b59eac8e2bebc61d915">ESP8266WiFiClass::mode</a></div><div class="ttdeci">void mode(WiFiMode)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:62</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a9e80837fdb83d656c8cbf71e0c583a14"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a9e80837fdb83d656c8cbf71e0c583a14">ESP8266WiFiClass::scanNetworks</a></div><div class="ttdeci">int8_t scanNetworks(bool async=false)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:564</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_generic_class_html_af325c0d6dd6a104a820b5ba12d6b0129"><div class="ttname"><a href="../../d0/d52/class_e_s_p8266_wi_fi_generic_class.html#af325c0d6dd6a104a820b5ba12d6b0129">ESP8266WiFiGenericClass::channel</a></div><div class="ttdeci">int32_t channel(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFiGeneric.cpp:126</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_scan_class_html"><div class="ttname"><a href="../../df/d1c/class_e_s_p8266_wi_fi_scan_class.html">ESP8266WiFiScanClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFiScan.h:29</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_class_html"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html">ESP8266WiFiClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:43</div></div>
 <div class="ttc" id="class_wi_fi_server_html"><div class="ttname"><a href="../../da/de6/class_wi_fi_server.html">WiFiServer</a></div><div class="ttdef"><b>Definition:</b> WiFiServer.h:37</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a25483c70c8fe8e4783dd1ca3822b1779"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a25483c70c8fe8e4783dd1ca3822b1779">ESP8266WiFiClass::_mode</a></div><div class="ttdeci">void _mode(WiFiMode)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:88</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ae4c8bc2b1866f84d3bc9539ed6e873bf"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ae4c8bc2b1866f84d3bc9539ed6e873bf">ESP8266WiFiClass::_scanDone</a></div><div class="ttdeci">static void _scanDone(void *result, int status)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:499</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a808ad7c1939d9be704faf1c89f8bc41c"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a808ad7c1939d9be704faf1c89f8bc41c">ESP8266WiFiClass::printDiag</a></div><div class="ttdeci">void printDiag(Print &amp;dest)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:912</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a863e9a61a19ff653d6412ecf775ce82d"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a863e9a61a19ff653d6412ecf775ce82d">ESP8266WiFiClass::_getScanInfoByIndex</a></div><div class="ttdeci">void * _getScanInfoByIndex(int i)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:610</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_ac073a46b2f7b4c0a25be83bafbb89752"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#ac073a46b2f7b4c0a25be83bafbb89752">ESP8266WiFiClass::_useStaticIp</a></div><div class="ttdeci">bool _useStaticIp</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.h:389</div></div>
-<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a6a2efcd899d61c1ba8867d42c0b83edd"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a6a2efcd899d61c1ba8867d42c0b83edd">ESP8266WiFiClass::BSSIDstr</a></div><div class="ttdeci">String BSSIDstr(void)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:475</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_s_t_a_class_html"><div class="ttname"><a href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html">ESP8266WiFiSTAClass</a></div><div class="ttdef"><b>Definition:</b> ESP8266WiFiSTA.h:31</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_class_html_a808ad7c1939d9be704faf1c89f8bc41c"><div class="ttname"><a href="../../d8/ded/class_e_s_p8266_wi_fi_class.html#a808ad7c1939d9be704faf1c89f8bc41c">ESP8266WiFiClass::printDiag</a></div><div class="ttdeci">void printDiag(Print &amp;dest)</div><div class="ttdef"><b>Definition:</b> ESP8266WiFi.cpp:51</div></div>
+<div class="ttc" id="class_e_s_p8266_wi_fi_s_t_a_class_html_a694b15de155ff966d2a58fa958aa071e"><div class="ttname"><a href="../../d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a694b15de155ff966d2a58fa958aa071e">ESP8266WiFiSTAClass::SSID</a></div><div class="ttdeci">String SSID() const </div><div class="ttdef"><b>Definition:</b> ESP8266WiFiSTA.cpp:449</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

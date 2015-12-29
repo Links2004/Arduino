@@ -72,8 +72,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa62cf23018e6dd88ba369d6bd5bb9a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709b00d1ab53bf4830af8194ebabe199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a709b00d1ab53bf4830af8194ebabe199">addService</a> (String service, String proto, uint16_t port)</td></tr>
 <tr class="separator:a709b00d1ab53bf4830af8194ebabe199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8747944362ba539c3aaaaa1bc7270dd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a8747944362ba539c3aaaaa1bc7270dd0">addServiceTxt</a> (char *name, char *proto, char *key, char *value)</td></tr>
+<tr class="separator:a8747944362ba539c3aaaaa1bc7270dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0382812eaa96d087356638d51c6db264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a0382812eaa96d087356638d51c6db264">addServiceTxt</a> (const char *name, const char *proto, const char *key, const char *value)</td></tr>
+<tr class="separator:a0382812eaa96d087356638d51c6db264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43282b6efd6cb813add04e41c7938d49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a43282b6efd6cb813add04e41c7938d49">addServiceTxt</a> (String name, String proto, String key, String value)</td></tr>
+<tr class="separator:a43282b6efd6cb813add04e41c7938d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d32c064bf8866741c92b9c78a9d836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a49d32c064bf8866741c92b9c78a9d836">enableArduino</a> (uint16_t port, bool auth=false)</td></tr>
 <tr class="separator:a49d32c064bf8866741c92b9c78a9d836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4861452ef0cb6f25a7ff1e01f807d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#acd4861452ef0cb6f25a7ff1e01f807d3">setInstanceName</a> (String name)</td></tr>
+<tr class="separator:acd4861452ef0cb6f25a7ff1e01f807d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62da5c41e2e173b4c8f3cdaf0f34423f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a62da5c41e2e173b4c8f3cdaf0f34423f">setInstanceName</a> (const char *name)</td></tr>
+<tr class="separator:a62da5c41e2e173b4c8f3cdaf0f34423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17dd7e041d775d6ffce5762ce25db030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a17dd7e041d775d6ffce5762ce25db030">setInstanceName</a> (char *name)</td></tr>
+<tr class="separator:a17dd7e041d775d6ffce5762ce25db030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -81,6 +93,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a20abb1105507b161ce9f51e1458e0d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d891bffe7a868b9827ae8da762a576"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#ae1d891bffe7a868b9827ae8da762a576">_getServicePort</a> (char *service, char *proto)</td></tr>
 <tr class="separator:ae1d891bffe7a868b9827ae8da762a576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7978c597fea1e4c3f2dc187ffcd6959c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6b/struct_m_d_n_s_txt.html">MDNSTxt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a7978c597fea1e4c3f2dc187ffcd6959c">_getServiceTxt</a> (char *name, char *proto)</td></tr>
+<tr class="separator:a7978c597fea1e4c3f2dc187ffcd6959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e63a4d64da1c23a367379da81202c76"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a7e63a4d64da1c23a367379da81202c76">_getServiceTxtLen</a> (char *name, char *proto)</td></tr>
+<tr class="separator:a7e63a4d64da1c23a367379da81202c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffb4827bea7da8d41cb8c1ebfeae7ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a9ffb4827bea7da8d41cb8c1ebfeae7ce">_parsePacket</a> ()</td></tr>
 <tr class="separator:a9ffb4827bea7da8d41cb8c1ebfeae7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abafa9b7a101ca6dfe05cc80dae0aaf33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#abafa9b7a101ca6dfe05cc80dae0aaf33">_reply</a> (uint8_t replyMask, char *service, char *proto, uint16_t port)</td></tr>
@@ -92,10 +108,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4673bfb017687dc7aad312168f2f68f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ea7aca03b2f9805c95b77d7d4d32a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0a/class_udp_context.html">UdpContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a64ea7aca03b2f9805c95b77d7d4d32a8">_conn</a></td></tr>
 <tr class="separator:a64ea7aca03b2f9805c95b77d7d4d32a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea9267dc8acdf3cdd6da911d2709ce3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#afea9267dc8acdf3cdd6da911d2709ce3">_hostName</a> [128]</td></tr>
-<tr class="separator:afea9267dc8acdf3cdd6da911d2709ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb13de6011445685377244076a3fc93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#a9fb13de6011445685377244076a3fc93">_arduinoAuth</a></td></tr>
-<tr class="separator:a9fb13de6011445685377244076a3fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae55908afed78023da1a0b12ad6f28f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#aeae55908afed78023da1a0b12ad6f28f">_hostName</a></td></tr>
+<tr class="separator:aeae55908afed78023da1a0b12ad6f28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af549a2891d94cec758bead78a5223d41"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/class_m_d_n_s_responder.html#af549a2891d94cec758bead78a5223d41">_instanceName</a></td></tr>
+<tr class="separator:af549a2891d94cec758bead78a5223d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9d1653bc6fcbbbd54b4365125f68bd7b"></a>
@@ -164,6 +180,74 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>proto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7978c597fea1e4c3f2dc187ffcd6959c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6b/struct_m_d_n_s_txt.html">MDNSTxt</a> * MDNSResponder::_getServiceTxt </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>proto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e63a4d64da1c23a367379da81202c76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t MDNSResponder::_getServiceTxtLen </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -351,6 +435,120 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8747944362ba539c3aaaaa1bc7270dd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MDNSResponder::addServiceTxt </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>proto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0382812eaa96d087356638d51c6db264"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::addServiceTxt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>proto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43282b6efd6cb813add04e41c7938d49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::addServiceTxt </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>proto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="afe4e0b409c85b508dc55be4284ade323"></a>
 <div class="memitem">
 <div class="memproto">
@@ -425,6 +623,54 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acd4861452ef0cb6f25a7ff1e01f807d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::setInstanceName </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62da5c41e2e173b4c8f3cdaf0f34423f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::setInstanceName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17dd7e041d775d6ffce5762ce25db030"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDNSResponder::setInstanceName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a77ed79d694accf4624ed563983f20b00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -441,26 +687,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9fb13de6011445685377244076a3fc93"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MDNSResponder::_arduinoAuth</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a64ea7aca03b2f9805c95b77d7d4d32a8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +707,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afea9267dc8acdf3cdd6da911d2709ce3"></a>
+<a class="anchor" id="aeae55908afed78023da1a0b12ad6f28f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -489,7 +715,27 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char MDNSResponder::_hostName[128]</td>
+          <td class="memname">String MDNSResponder::_hostName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af549a2891d94cec758bead78a5223d41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String MDNSResponder::_instanceName</td>
         </tr>
       </table>
   </td>

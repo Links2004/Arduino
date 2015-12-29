@@ -99,15 +99,15 @@
 , <a class="el" href="d6/df7/class_e_e_p_r_o_m_class.html#ab27ca4fac7c886d61b6294525b17ecf9">EEPROMClass</a>
 , <a class="el" href="d2/db0/class_e_s_p8266_a_v_r_i_s_p.html#aad5bcedf10e40e68769f1e546a5b8bbf">ESP8266AVRISP</a>
 , <a class="el" href="d3/d58/class_e_s_p8266_web_server.html#ae671a4a2506b0c8123502dddffa484c0">ESP8266WebServer</a>
-, <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#afde7cd16acfb2d64fbab387d1e76887b">ESP8266WiFiClass</a>
 , <a class="el" href="d0/d06/class_e_s_p8266_wi_fi_mesh.html#a1849a485e9857d31df10ea81028c3793">ESP8266WiFiMesh</a>
+, <a class="el" href="d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a35fdd55fb637ce63ece3c32dad8d44c8">ESP8266WiFiSTAClass</a>
 , <a class="el" href="d4/d2f/class_ethernet_class.html#ae4e8ddaec4ed16ba2e998931f6744120">EthernetClass</a>
 , <a class="el" href="dc/d29/class_ethernet_server.html#a8a236499f179a28ba80377f9a93adcce">EthernetServer</a>
 , <a class="el" href="d4/d2a/class_ethernet_u_d_p.html#acc88c7818dea3444e3aae38a7c9cd3bb">EthernetUDP</a>
 , <a class="el" href="d0/de5/classfs_1_1_f_s.html#adfd1ae5be679adf3b63690e6cf6b3716">fs::FS</a>
 , <a class="el" href="dc/d2c/classfs_1_1_f_s_impl.html#a9bac748f819938bec83688ee40b8f07b">fs::FSImpl</a>
 , <a class="el" href="d4/db1/class_hardware_serial.html#a288e8a54617bc6c3ebbcaa4ef8dc9efa">HardwareSerial</a>
-, <a class="el" href="dd/dad/classhttp_client.html#a8af1f69097fa99297a0ee6e538b48a39">httpClient</a>
+, <a class="el" href="dd/d8d/class_h_t_t_p_client.html#a559daba783f23e89587e651be480de2b">HTTPClient</a>
 , <a class="el" href="d0/db7/class_m_d5_builder.html#a33bac0a97f30eeb87b69ab94a1c14ba0">MD5Builder</a>
 , <a class="el" href="d0/d6d/class_m_d_n_s_responder.html#afe4e0b409c85b508dc55be4284ade323">MDNSResponder</a>
 , <a class="el" href="d7/d69/class_s_d_class.html#ac4f85a60d2f0cf1dd833525243437d84">SDClass</a>
@@ -117,7 +117,7 @@
 , <a class="el" href="db/da4/class_s_s_d_p_class.html#a5383b1b114e60cb2f02599aab6c63852">SSDPClass</a>
 , <a class="el" href="d9/d4b/class_two_wire.html#a28bca087ed188781ef15e72622d3b1fb">TwoWire</a>
 , <a class="el" href="d3/d59/class_u_d_p.html#afc18a5689a3dc92e5f5fb740e08ba1f9">UDP</a>
-, <a class="el" href="d0/de9/class_updater_class.html#a46671c003832a620a4e9952d2e029308">UpdaterClass</a>
+, <a class="el" href="d0/de9/class_updater_class.html#a6c966f7b0b8f6c15c8de077d3aa2bce9">UpdaterClass</a>
 , <a class="el" href="da/de6/class_wi_fi_server.html#a953b3d2a3ea0b0582be9535b6aa908d9">WiFiServer</a>
 , <a class="el" href="d2/d8e/class_wi_fi_u_d_p.html#a4cf33de23142a8a3940c11722d6662f3">WiFiUDP</a>
 </li>
@@ -145,7 +145,7 @@
 : <a class="el" href="db/d8c/structpartition_table.html#ae201c11d9671c9efc307c654a2b6c026">partitionTable</a>
 </li>
 <li>beginSmartConfig()
-: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#acd3db6e049d0b1fd4bbe334faf7c2aa8">ESP8266WiFiClass</a>
+: <a class="el" href="d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#abbdb0ac3da8f83015e78ffd818bb5a62">ESP8266WiFiSTAClass</a>
 </li>
 <li>beginTransaction()
 : <a class="el" href="da/d4e/class_s_p_i_class.html#ae57b61b624decf76a9845c66fe120149">SPIClass</a>
@@ -157,7 +157,7 @@
 : <a class="el" href="d1/d80/class_dhcp_class.html#a715349b0f43552a8db9f8f193be6b70b">DhcpClass</a>
 </li>
 <li>beginWPSConfig()
-: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#a606938c0e0e7145403f898f120c817bd">ESP8266WiFiClass</a>
+: <a class="el" href="d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#ab09dab66a4d944340094bd6f0a9eeba5">ESP8266WiFiSTAClass</a>
 </li>
 <li>bitmask
 : <a class="el" href="d4/d46/class_one_wire.html#a14c061b2d688f2d906d97e4e159d487b">OneWire</a>
@@ -219,10 +219,12 @@
 : <a class="el" href="d2/db0/class_e_s_p8266_a_v_r_i_s_p.html#ab9e44b444a8168696e0f80dfabfa9131">ESP8266AVRISP</a>
 </li>
 <li>BSSID()
-: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#a8878fe8a5752f95f00fb020bef61a657">ESP8266WiFiClass</a>
+: <a class="el" href="df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a1a0e2120557e134a82ca1f59fcff90e9">ESP8266WiFiScanClass</a>
+, <a class="el" href="d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a94a45deb6161750bb8167e1503c2b7f2">ESP8266WiFiSTAClass</a>
 </li>
 <li>BSSIDstr()
-: <a class="el" href="d8/ded/class_e_s_p8266_wi_fi_class.html#a6a2efcd899d61c1ba8867d42c0b83edd">ESP8266WiFiClass</a>
+: <a class="el" href="df/d1c/class_e_s_p8266_wi_fi_scan_class.html#a826bab3068d51b93f31eff89fa091327">ESP8266WiFiScanClass</a>
+, <a class="el" href="d0/d5f/class_e_s_p8266_wi_fi_s_t_a_class.html#a22d2ce7ec1eab3cd362b4fbd3e76ed81">ESP8266WiFiSTAClass</a>
 </li>
 <li>buf
 : <a class="el" href="d6/d7b/struct_h_t_t_p_upload.html#a5c3e566e5cd8b3cb1fb2a97390e35f55">HTTPUpload</a>

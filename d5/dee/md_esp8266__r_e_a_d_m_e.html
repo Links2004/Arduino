@@ -42,6 +42,19 @@
 <div class="contents">
 <div class="textblock"><p>This project brings support for ESP8266 chip to the Arduino environment. It lets you write sketches using familiar Arduino functions and libraries, and run them directly on ESP8266, no external microcontroller required.</p>
 <p>ESP8266 Arduino core comes with libraries to communicate over WiFi using TCP and <a class="el" href="../../d3/d59/class_u_d_p.html">UDP</a>, set up HTTP, mDNS, SSDP, and DNS servers, do OTA updates, use a file system in flash memory, work with SD cards, servos, SPI and I2C peripherals.</p>
+<h1>Contents</h1>
+<ul>
+<li>Installing options:<ul>
+<li><a href="../../#installing-with-boards-manager">Using Boards Manager</a></li>
+<li><a href="../../#using-git-version-">Using git version</a></li>
+<li><a href="../../#using-stable-version-with-platformio">Using stable version with PlatformIO</a></li>
+</ul>
+</li>
+<li><a href="../../#documentation">Documentation</a></li>
+<li><a href="../../#issues-and-support">Issues and support</a></li>
+<li><a href="../../#contributing">Contributing</a></li>
+<li><a href="../../#license-and-credits">License and credits</a></li>
+</ul>
 <h3>Installing with Boards Manager</h3>
 <p>Starting with 1.6.4, Arduino allows installation of third-party platform packages using Boards Manager. We have packages available for Windows, Mac OS, and Linux (32 and 64 bit).</p>
 <ul>
@@ -54,10 +67,10 @@
 <h4>Available versions</h4>
 <h5>Stable version </h5>
 <p>Boards manager link: <code><a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json">http://arduino.esp8266.com/stable/package_esp8266com_index.json</a></code></p>
-<p>Documentation: <a href="http://arduino.esp8266.com/stable/doc/reference.html">Reference</a></p>
+<p>Documentation: <a href="http://esp8266.github.io/Arduino/versions/2.0.0/">http://esp8266.github.io/Arduino/versions/2.0.0/</a></p>
 <h5>Staging version </h5>
 <p>Boards manager link: <code><a href="http://arduino.esp8266.com/staging/package_esp8266com_index.json">http://arduino.esp8266.com/staging/package_esp8266com_index.json</a></code></p>
-<p>Documentation: <a href="http://arduino.esp8266.com/staging/doc/reference.html">Reference</a></p>
+<p>Documentation: <a href="http://esp8266.github.io/Arduino/versions/2.0.0-rc2/">http://esp8266.github.io/Arduino/versions/2.0.0-rc2/</a></p>
 <h3>Using git version <a href="https://travis-ci.org/esp8266/Arduino">![Linux build status](https://travis-ci.org/esp8266/Arduino.svg)</a></h3>
 <ul>
 <li>Install Arduino 1.6.5</li>
@@ -72,12 +85,18 @@
 </div><!-- fragment --></li>
 <li>Restart Arduino</li>
 </ul>
+<h3>Using stable version with PlatformIO</h3>
+<p><a href="http://platformio.org">PlatformIO</a> is a cross-platform code-builder and library manager for embedded development with no external dependencies. Works on the popular host OS: Mac OS X, Windows, Linux 32/64, Linux ARM (like Raspberry Pi, BeagleBone, CubieBoard). More details in documentation <a href="http://docs.platformio.org/en/latest/faq.html#general">What is PlatformIO? How does it work?</a>.</p>
+<p>See detailed instructions on how to use Espressif platform with PlatformIO.</p>
+<h3>Documentation</h3>
 <p>Documentation for latest development version:</p>
 <ul>
 <li>Reference</li>
+<li>Libraries</li>
+<li>File system</li>
+<li>OTA update</li>
 <li>Supported boards</li>
 <li>Change log</li>
-<li>OTA Update</li>
 </ul>
 <h3>Issues and support</h3>
 <p>If you encounter an issue, you are welcome to submit it here on Github: <a href="https://github.com/esp8266/Arduino/issues">https://github.com/esp8266/Arduino/issues</a>. Please provide as much context as possible: version which you are using (you can check it in Boards Manager), your sketch code, serial output, board model, IDE settings (board selection, flash size, etc).</p>

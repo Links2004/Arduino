@@ -41,14 +41,14 @@
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><ul>
-<li>Add <code>#include &lt;<a class="el" href="../../d2/db7/_g_d_b_stub_8h_source.html">GDBStub.h</a>&gt;</code> to the sketch</li>
+<li>Add <code>#include &lt;GDBStub.h&gt;</code> to the sketch</li>
 <li>Upload the sketch</li>
 <li>Redirect serial port to TCP port: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tcp_serial_redirect.py -p /dev/tty.SLAB_USBtoUART -b 115200 --spy -P 9980 --rts=0 --dtr=0</div>
 </div><!-- fragment --> Change port and baud rate as necessary. This command requires python and pyserial.</li>
 <li>Observe serial output: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;nc localhost 9980</div>
 </div><!-- fragment --></li>
-<li>When crash happens, <code>Trap d: pc=p va=p</code> line will appear in serial output.</li>
-<li>Close nc and start gdb: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;xtensa-lx106-elf-gdb /path/to/Sketch.cpp.elf -ex &quot;target remote :9980&quot;</div>
+<li>Once crash happens, close nc and start gdb: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;xtensa-lx106-elf-gdb /path/to/Sketch.cpp.elf -ex &quot;target remote :9980&quot;</div>
+</div><!-- fragment --> Or, using the provided gdbcmds file: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;xtensa-lx106-elf-gdb /path/to/Sketch.cpp.elf -x gdbcmds</div>
 </div><!-- fragment --></li>
 <li>Use gdb to inspect program state at the point of an exception.</li>
 </ul>
@@ -58,12 +58,7 @@
 </div><!-- fragment --> at the top of <code>__wrap_system_restart_local</code> in core_esp8266_postmortem.c.</li>
 </ul>
 <h2>License</h2>
-<p>GDB <a class="el" href="../../dc/db6/class_server.html">Server</a> stub by Marko Mikulicic was taken from Cesanta's smart.js</p>
-<p><a href="https://github.com/cesanta/smart.js">https://github.com/cesanta/smart.js</a></p>
-<p>Copyright (c) 2013-2014 Cesanta Software Limited All rights reserved</p>
-<p>This software is dual-licensed: you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation. For the terms of this license, see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.</p>
-<p>You are free to use this software under the terms of the GNU General Public License, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>Alternatively, you can license this software under a commercial license, as set out in <a href="https://www.cesanta.com/license">https://www.cesanta.com/license</a>. </p>
+<p>Espressif MIT License. See License file. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

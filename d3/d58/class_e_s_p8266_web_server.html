@@ -79,6 +79,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae671a4a2506b0c8123502dddffa484c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7293ffe47fa32d127118c97d80c4c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a1f7293ffe47fa32d127118c97d80c4c0">handleClient</a> ()</td></tr>
 <tr class="separator:a1f7293ffe47fa32d127118c97d80c4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3b7a2d6a1bf66f6651369487e20b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#afa3b7a2d6a1bf66f6651369487e20b23">close</a> ()</td></tr>
+<tr class="separator:afa3b7a2d6a1bf66f6651369487e20b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2b7ea6d8a187918c4f11a55f5131f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#aec2b7ea6d8a187918c4f11a55f5131f6">stop</a> ()</td></tr>
+<tr class="separator:aec2b7ea6d8a187918c4f11a55f5131f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3239185a8168c64cb3ae7655545f6a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#ac3239185a8168c64cb3ae7655545f6a8">authenticate</a> (const char *username, const char *password)</td></tr>
+<tr class="separator:ac3239185a8168c64cb3ae7655545f6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f9804179b8f6f9c7049fb61711ab24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#ad8f9804179b8f6f9c7049fb61711ab24">requestAuthentication</a> ()</td></tr>
+<tr class="separator:ad8f9804179b8f6f9c7049fb61711ab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3b6624fd441f8ca8e7973a57e6585b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#afa3b6624fd441f8ca8e7973a57e6585b">on</a> (const char *<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a054331eed29739c923d7698b80def5f6">uri</a>, <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">THandlerFunction</a> handler)</td></tr>
 <tr class="separator:afa3b6624fd441f8ca8e7973a57e6585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1134ab1ec176ce9f79cbcffe73784e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a2f1134ab1ec176ce9f79cbcffe73784e">on</a> (const char *<a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a054331eed29739c923d7698b80def5f6">uri</a>, HTTPMethod <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a323d15b7670bd101dd396e0c375c6fe8">method</a>, <a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">THandlerFunction</a> fn)</td></tr>
@@ -677,6 +685,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac3239185a8168c64cb3ae7655545f6a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ESP8266WebServer::authenticate </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae671a4a2506b0c8123502dddffa484c0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -698,6 +732,21 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a> ESP8266WebServer::client </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa3b7a2d6a1bf66f6651369487e20b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ESP8266WebServer::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -994,6 +1043,21 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/d58/class_e_s_p8266_web_server.html#a15bf040c1f1cb499e25cb6eadbc3b7af">THandlerFunction</a>&#160;</td>
           <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8f9804179b8f6f9c7049fb61711ab24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ESP8266WebServer::requestAuthentication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1304,6 +1368,21 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>contentLength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec2b7ea6d8a187918c4f11a55f5131f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ESP8266WebServer::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

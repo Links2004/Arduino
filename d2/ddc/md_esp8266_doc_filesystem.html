@@ -142,7 +142,7 @@ Sketch    OTA update   File system   EEPROM  WiFi config (SDK)
 <h3>openDir</h3>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;{c++}</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;SPIFFS.openDir(path)</div>
-</div><!-- fragment --><p>Opens a directory given its absolute path. Returns a <em>Dir</em> object. To check if directory was opened successfully, use the boolean operator, similar to opening a file.</p>
+</div><!-- fragment --><p>Opens a directory given its absolute path. Returns a <em>Dir</em> object.</p>
 <h3>remove</h3>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;{c++}</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;SPIFFS.remove(path)</div>
@@ -166,7 +166,14 @@ Sketch    OTA update   File system   EEPROM  WiFi config (SDK)
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    size_t maxOpenFiles;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    size_t maxPathLength;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
-</div><!-- fragment --><p>This is the structure which may be filled using FS::info method. Field names are self-explanatory.</p>
+</div><!-- fragment --><p>This is the structure which may be filled using FS::info method.</p><ul>
+<li><code>totalBytes</code> — total size of useful data on the file system</li>
+<li><code>usedBytes</code> — number of bytes used by files</li>
+<li><code>blockSize</code> — SPIFFS block size</li>
+<li><code>pageSize</code> — SPIFFS logical page size</li>
+<li><code>maxOpenFiles</code> — max number of files which may be open simultaneously</li>
+<li><code>maxPathLength</code> — max file name length (including one byte for zero termination)</li>
+</ul>
 <h2>Directory object (Dir)</h2>
 <p>The purpose of <em>Dir</em> object is to iterate over files inside a directory. It provides three methods: <code>next()</code>, <code>fileName()</code>, and <code>openFile(mode)</code>.</p>
 <p>The following example shows how it should be used:</p>

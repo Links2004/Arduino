@@ -106,11 +106,15 @@
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// return 1 if guard bytes were overwritten.</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">int</span> cont_check(<a class="code" href="../../dc/dc9/structcont__.html">cont_t</a>* cont);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Check if yield() may be called. Returns true if we are running inside</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// continuation stack</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">bool</span> cont_can_yield(<a class="code" href="../../dc/dc9/structcont__.html">cont_t</a>* cont);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Go through stack and check how many bytes are most probably still unchanged</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// and thus weren&#39;t used by the user code. i.e. that stack space is free. (high water mark)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">int</span> cont_get_free_stack(<a class="code" href="../../dc/dc9/structcont__.html">cont_t</a>* cont);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONT_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Check if yield() may be called. Returns true if we are running inside</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// continuation stack</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> cont_can_yield(<a class="code" href="../../dc/dc9/structcont__.html">cont_t</a>* cont);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONT_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="structcont___html_a629ed7b6bf785c9027c7fc9eaac32f6e"><div class="ttname"><a href="../../dc/dc9/structcont__.html#a629ed7b6bf785c9027c7fc9eaac32f6e">cont_::pc_ret</a></div><div class="ttdeci">void(* pc_ret)(void)</div><div class="ttdef"><b>Definition:</b> cont.h:31</div></div>
 <div class="ttc" id="structcont___html_af9e24c89ac69a95ae78a6c7f8a237da0"><div class="ttname"><a href="../../dc/dc9/structcont__.html#af9e24c89ac69a95ae78a6c7f8a237da0">cont_::stack_guard2</a></div><div class="ttdeci">unsigned stack_guard2</div><div class="ttdef"><b>Definition:</b> cont.h:44</div></div>
 <div class="ttc" id="structcont___html_a2f886d4182bed43aaf66d3a55a2d23b7"><div class="ttname"><a href="../../dc/dc9/structcont__.html#a2f886d4182bed43aaf66d3a55a2d23b7">cont_::sp_ret</a></div><div class="ttdeci">unsigned * sp_ret</div><div class="ttdef"><b>Definition:</b> cont.h:32</div></div>

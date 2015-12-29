@@ -46,6 +46,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../da/de0/class_e_s_p8266_h_t_t_p_update-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ESP8266HTTPUpdate Class Reference</div>  </div>
@@ -58,12 +60,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add367291c5e57bb33f02763832b0f259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a33bbb5af5a64f527de2325d97fc2d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a5a33bbb5af5a64f527de2325d97fc2d1">~ESP8266HTTPUpdate</a> (void)</td></tr>
 <tr class="separator:a5a33bbb5af5a64f527de2325d97fc2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf404d8cb00212189607871e1d412b1"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7cf404d8cb00212189607871e1d412b1">update</a> (const char *host, uint16_t port, const char *url=&quot;/&quot;, const char *current_version=&quot;&quot;)</td></tr>
-<tr class="separator:a7cf404d8cb00212189607871e1d412b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d7d1cff85497948ee17936de202a04"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a51d7d1cff85497948ee17936de202a04">update</a> (String host, uint16_t port, String url=&quot;/&quot;, String current_version=&quot;&quot;)</td></tr>
-<tr class="separator:a51d7d1cff85497948ee17936de202a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf7a1f3f864e9a0041b769bc59e4092"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a1cf7a1f3f864e9a0041b769bc59e4092">update</a> (<a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a> &amp;client, const char *host, const char *url=&quot;/&quot;, const char *current_version=&quot;&quot;)</td></tr>
-<tr class="separator:a1cf7a1f3f864e9a0041b769bc59e4092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edb0138b6e31956187530ab9547ce27"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a4edb0138b6e31956187530ab9547ce27">update</a> (const char *url, const char *current_version=&quot;&quot;, const char *httpsFingerprint=&quot;&quot;, bool reboot=true)</td></tr>
+<tr class="separator:a4edb0138b6e31956187530ab9547ce27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80106951f3cc7e704985f082d2c5be3"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#ae80106951f3cc7e704985f082d2c5be3">update</a> (const char *host, uint16_t port, const char *url=&quot;/&quot;, const char *current_version=&quot;&quot;, bool https=false, const char *httpsFingerprint=&quot;&quot;, bool reboot=true)</td></tr>
+<tr class="separator:ae80106951f3cc7e704985f082d2c5be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4032f2362291b750760a7cf5f97b883c"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a4032f2362291b750760a7cf5f97b883c">update</a> (String host, uint16_t port, String url=&quot;/&quot;, String current_version=&quot;&quot;, bool https=false, String httpsFingerprint=&quot;&quot;, bool reboot=true)</td></tr>
+<tr class="separator:a4032f2362291b750760a7cf5f97b883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4fa3f48d83b1760bb70457aa55a0a6"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a6a4fa3f48d83b1760bb70457aa55a0a6">updateSpiffs</a> (const char *url, const char *current_version=&quot;&quot;, const char *httpsFingerprint=&quot;&quot;, bool reboot=false)</td></tr>
+<tr class="separator:a6a4fa3f48d83b1760bb70457aa55a0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e460728525e72aec8cbf07472640f86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a9e460728525e72aec8cbf07472640f86">getLastError</a> (void)</td></tr>
+<tr class="separator:a9e460728525e72aec8cbf07472640f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d41c8e1e1ba2c1f60dce9b3f3ddfd44"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a0d41c8e1e1ba2c1f60dce9b3f3ddfd44">getLastErrorString</a> (void)</td></tr>
+<tr class="separator:a0d41c8e1e1ba2c1f60dce9b3f3ddfd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7e9036afefbcca4a76ab776750755319"><td class="memItemLeft" align="right" valign="top">t_httpUpdate_return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7e9036afefbcca4a76ab776750755319">handleUpdate</a> (<a class="el" href="../../dd/d8d/class_h_t_t_p_client.html">HTTPClient</a> *http, const char *current_version, bool reboot=true, bool <a class="el" href="../../d0/ddb/structspiffs__t.html">spiffs</a>=false)</td></tr>
+<tr class="separator:a7e9036afefbcca4a76ab776750755319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed0009d7cb79238d87041dd4cc74f46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#abed0009d7cb79238d87041dd4cc74f46">runUpdate</a> (<a class="el" href="../../d1/d51/class_stream.html">Stream</a> &amp;in, uint32_t size, String md5, int command=U_FLASH)</td></tr>
+<tr class="separator:abed0009d7cb79238d87041dd4cc74f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7c2fb62e101b7d5a6b4c342db60aa95a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d31/class_e_s_p8266_h_t_t_p_update.html#a7c2fb62e101b7d5a6b4c342db60aa95a">lastError</a></td></tr>
+<tr class="separator:a7c2fb62e101b7d5a6b4c342db60aa95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="add367291c5e57bb33f02763832b0f259"></a>
@@ -99,109 +119,70 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7cf404d8cb00212189607871e1d412b1"></a>
+<a class="anchor" id="a9e460728525e72aec8cbf07472640f86"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td class="memname">int ESP8266HTTPUpdate::getLastError </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>host</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>return error code as int </p><dl class="section return"><dt>Returns</dt><dd>int error code </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a51d7d1cff85497948ee17936de202a04"></a>
+<a class="anchor" id="a0d41c8e1e1ba2c1f60dce9b3f3ddfd44"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td class="memname">String ESP8266HTTPUpdate::getLastErrorString </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>host</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>return error code as String </p><dl class="section return"><dt>Returns</dt><dd>String error </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a1cf7a1f3f864e9a0041b769bc59e4092"></a>
+<a class="anchor" id="a7e9036afefbcca4a76ab776750755319"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::handleUpdate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/da7/class_wi_fi_client.html">WiFiClient</a> &amp;&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramtype"><a class="el" href="../../dd/d8d/class_h_t_t_p_client.html">HTTPClient</a> *&#160;</td>
+          <td class="paramname"><em>http</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>host</em>, </td>
+          <td class="paramname"><em>current_version</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reboot</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>spiffs</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,10 +190,315 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">http</td><td><a class="el" href="../../dd/d8d/class_h_t_t_p_client.html">HTTPClient</a> * </td></tr>
+    <tr><td class="paramname">current_version</td><td>const char * </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>t_httpUpdate_return </dd></dl>
 <p>&lt; OK (Start Update)</p>
-<p>&lt; Not Modified (No updates)</p>
-<p>&lt; Forbidden </p>
+<p>&lt; Not Modified (No updates) </p>
+
+</div>
+</div>
+<a class="anchor" id="abed0009d7cb79238d87041dd4cc74f46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ESP8266HTTPUpdate::runUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d51/class_stream.html">Stream</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>md5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>command</em> = <code>U_FLASH</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>write Update to flash </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td><a class="el" href="../../d1/d51/class_stream.html">Stream</a>&amp; </td></tr>
+    <tr><td class="paramname">size</td><td>uint32_t </td></tr>
+    <tr><td class="paramname">md5</td><td>String </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if Update ok </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4edb0138b6e31956187530ab9547ce27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>httpsFingerprint</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reboot</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>const char * </td></tr>
+    <tr><td class="paramname">current_version</td><td>const char * </td></tr>
+    <tr><td class="paramname">httpsFingerprint</td><td>const char * </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>t_httpUpdate_return </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae80106951f3cc7e704985f082d2c5be3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>https</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>httpsFingerprint</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reboot</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>const char * </td></tr>
+    <tr><td class="paramname">port</td><td>uint16_t </td></tr>
+    <tr><td class="paramname">url</td><td>const char * </td></tr>
+    <tr><td class="paramname">current_version</td><td>const char * </td></tr>
+    <tr><td class="paramname">httpsFingerprint</td><td>const char * </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4032f2362291b750760a7cf5f97b883c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::update </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>url</em> = <code>&quot;/&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>https</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>httpsFingerprint</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reboot</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a4fa3f48d83b1760bb70457aa55a0a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_httpUpdate_return ESP8266HTTPUpdate::updateSpiffs </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>current_version</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>httpsFingerprint</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reboot</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>const char * </td></tr>
+    <tr><td class="paramname">current_version</td><td>const char * </td></tr>
+    <tr><td class="paramname">httpsFingerprint</td><td>const char * </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>t_httpUpdate_return </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a7c2fb62e101b7d5a6b4c342db60aa95a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ESP8266HTTPUpdate::lastError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

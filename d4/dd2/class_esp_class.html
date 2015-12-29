@@ -94,6 +94,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaf59bb7cabc96d389049c49d644c2cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af281b485d6e8b744fa3a210291f3abbc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#af281b485d6e8b744fa3a210291f3abbc">getFlashChipSizeByChipId</a> ()</td></tr>
 <tr class="separator:af281b485d6e8b744fa3a210291f3abbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446bf0e1d977058b3e8f727b63434857"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#a446bf0e1d977058b3e8f727b63434857">magicFlashChipSize</a> (uint8_t byte)</td></tr>
+<tr class="separator:a446bf0e1d977058b3e8f727b63434857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847ee8d6a349ed4aed22d9a369056ed0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#a847ee8d6a349ed4aed22d9a369056ed0">magicFlashChipSpeed</a> (uint8_t byte)</td></tr>
+<tr class="separator:a847ee8d6a349ed4aed22d9a369056ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1653ed6a09bf3106fe24130a919dfc"><td class="memItemLeft" align="right" valign="top">FlashMode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#aae1653ed6a09bf3106fe24130a919dfc">magicFlashChipMode</a> (uint8_t byte)</td></tr>
+<tr class="separator:aae1653ed6a09bf3106fe24130a919dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3488dcb451001fc2a4212d79e302819"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#ae3488dcb451001fc2a4212d79e302819">checkFlashConfig</a> (bool needsEquals=false)</td></tr>
+<tr class="separator:ae3488dcb451001fc2a4212d79e302819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa8e7b431a3d88324abee54adc1c2d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#a6fa8e7b431a3d88324abee54adc1c2d5">flashEraseSector</a> (uint32_t sector)</td></tr>
 <tr class="separator:a6fa8e7b431a3d88324abee54adc1c2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99363e5ac7f9432febcf502260a57119"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd2/class_esp_class.html#a99363e5ac7f9432febcf502260a57119">flashWrite</a> (uint32_t offset, uint32_t *data, size_t size)</td></tr>
@@ -116,6 +124,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7eba72811f7d4e9b3359b9c3bd7c32f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae3488dcb451001fc2a4212d79e302819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EspClass::checkFlashConfig </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>needsEquals</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>check the Flash settings from IDE against the Real flash size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">needsEquals</td><td>(return only true it equals) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ok or not </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab4e5bccde8987d20017343a39439832a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -518,6 +549,54 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae1653ed6a09bf3106fe24130a919dfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FlashMode_t EspClass::magicFlashChipMode </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a446bf0e1d977058b3e8f727b63434857"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t EspClass::magicFlashChipSize </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a847ee8d6a349ed4aed22d9a369056ed0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t EspClass::magicFlashChipSpeed </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>byte</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
