@@ -244,10 +244,13 @@ class ClientContext {
             }
 
             _send_waiting = true;
+#ifdef DEBUG_ESP_CORE
+            unsigned long send_start_time = micros();
+#endif
             delay(5000); // max send timeout
             _send_waiting = false;
 
-            DEBUGV(":ww %d\r\n", (will_send - _size_sent));
+            DEBUGV(":ww %d us: %d\r\n", (will_send - _size_sent), (micros() - send_start_time));
             return will_send - _size_sent;
         }
 
