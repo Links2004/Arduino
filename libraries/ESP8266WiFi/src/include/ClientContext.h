@@ -223,28 +223,45 @@ class ClientContext {
 
             size_t room = tcp_sndbuf(_pcb);
             size_t will_send = (room < size) ? room : size;
-            err_t err = tcp_write(_pcb, data, will_send, 0);
-            if(err != ERR_OK) {
-                DEBUGV(":wr !ERR_OK\r\n");
-                return 0;
+
+            if(_size_sent > 0) {
+                DEBUGV(":wr _size_sent: %d\r\n", _size_sent);
             }
 
             _size_sent = will_send;
+
+            err_t err = tcp_write(_pcb, data, will_send, 0);
+            if(err != ERR_OK) {
+                DEBUGV(":wr !ERR_OK %d\r\n", err);
+                return 0;
+            }
+
             DEBUGV(":wr\r\n");
             tcp_output( _pcb );
+            if(err != ERR_OK) {
+                DEBUGV(":wro !ERR_OK %d\r\n", err);
+                return 0;
+            }
+
             _send_waiting = true;
             delay(5000); // max send timeout
             _send_waiting = false;
-            DEBUGV(":ww\r\n");
+
+            DEBUGV(":ww %d\r\n", (will_send - _size_sent));
             return will_send - _size_sent;
         }
 
     private:
 
         err_t _sent(tcp_pcb* pcb, uint16_t len) {
-            DEBUGV(":sent %d\r\n", len);
+            if(len > _size_sent) {
+                DEBUGV(":sent error len (%d) > _size_sent (%d)!?\r\n", len, _size_sent);
+            }
             _size_sent -= len;
-            if(_size_sent == 0 && _send_waiting) esp_schedule();
+            DEBUGV(":sent %d left: %d\r\n", len, _size_sent);
+            if(_size_sent == 0 && _send_waiting) {
+                esp_schedule();
+            }
             return ERR_OK;
         }
 
